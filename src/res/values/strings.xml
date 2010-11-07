@@ -2,4 +2,5 @@
 <resources>
     <string name="hello">Hello World, main!</string>
     <string name="app_name">snake2</string>
+<string name="start">Start new game!</string>
 </resources>
