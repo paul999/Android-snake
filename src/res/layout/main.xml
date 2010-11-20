@@ -1,26 +1,75 @@
 <?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+android:id="@+id/widget32"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+android:background="@drawable/background"
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:myapp="http://schemas.android.com/apk/res/paul.sohier.snake"
+>
+<TableLayout
+android:id="@+id/widget28"
+android:layout_width="295px"
+android:layout_height="300px"
+android:orientation="vertical"
+android:layout_centerVertical="true"
+android:layout_centerHorizontal="true"
+>
 
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-	xmlns:myapp="http://schemas.android.com/apk/res/paul.sohier.snake2"
-	android:orientation="vertical" android:layout_width="fill_parent"
-	android:layout_height="fill_parent">
-	<TextView android:layout_width="fill_parent"
-		android:layout_height="wrap_content" android:text="@string/hello" />
-	<TextView android:layout_width="fill_parent"
-		android:layout_height="wrap_content" android:text="@string/hello"
-		android:gravity="center" />
-	<Button android:text="@string/start" android:id="@+id/Button01"
-		android:layout_width="fill_parent" android:layout_height="wrap_content" 
-		android:gravity="center"></Button>
 
+<Button
+android:id="@+id/StartGame"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:background="@drawable/startgame_button"
+>
+</Button>
+<TextView
+android:id="@+id/widget34"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
 
-	<com.admob.android.ads.AdView android:id="@+id/adver"
+>
+</TextView>
+<Button
+android:id="@+id/Help"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:background="@drawable/help_button" 
+>
+</Button>
+<TextView
+android:id="@+id/widget35"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+
+>
+</TextView>
+<Button
+android:id="@+id/Options"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:background="@drawable/options_button" 
+>
+</Button>
+<TextView
+android:id="@+id/widget38"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+
+>
+</TextView>
+<Button
+android:id="@+id/Credits"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:background="@drawable/credits_button"
+>
+</Button>
+
+</TableLayout>
+<com.admob.android.ads.AdView android:id="@+id/adver"
 		android:layout_width="fill_parent" android:layout_height="wrap_content"
-		myapp:backgroundColor="#000000" myapp:primaryTextColor="#FFFFFF"
-		myapp:secondaryTextColor="#CCCCCC" android:gravity="bottom" />
+		 android:gravity="bottom"></com.admob.android.ads.AdView>
 
-
-
-
-
-</LinearLayout>
+</RelativeLayout>

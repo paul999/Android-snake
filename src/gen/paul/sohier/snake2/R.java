@@ -54,11 +54,36 @@ containing a value of this type.
         public static final int secondaryTextColor=0x7f010002;
     }
     public static final class drawable {
-        public static final int icon=0x7f020000;
+        public static final int background=0x7f020000;
+        public static final int credits=0x7f020001;
+        public static final int credits_button=0x7f020002;
+        public static final int credits_highlighted=0x7f020003;
+        public static final int credits_pressed=0x7f020004;
+        public static final int help=0x7f020005;
+        public static final int help_button=0x7f020006;
+        public static final int help_highlighted=0x7f020007;
+        public static final int help_pressed=0x7f020008;
+        public static final int icon=0x7f020009;
+        public static final int options=0x7f02000a;
+        public static final int options_button=0x7f02000b;
+        public static final int options_highlighted=0x7f02000c;
+        public static final int options_pressed=0x7f02000d;
+        public static final int startgame=0x7f02000e;
+        public static final int startgame_button=0x7f02000f;
+        public static final int startgame_highlighted=0x7f020010;
+        public static final int startgame_pressed=0x7f020011;
     }
     public static final class id {
-        public static final int Button01=0x7f050000;
-        public static final int adver=0x7f050001;
+        public static final int Credits=0x7f050008;
+        public static final int Help=0x7f050004;
+        public static final int Options=0x7f050006;
+        public static final int StartGame=0x7f050002;
+        public static final int adver=0x7f050009;
+        public static final int widget28=0x7f050001;
+        public static final int widget32=0x7f050000;
+        public static final int widget34=0x7f050003;
+        public static final int widget35=0x7f050005;
+        public static final int widget38=0x7f050007;
     }
     public static final class layout {
         public static final int main=0x7f030000;
