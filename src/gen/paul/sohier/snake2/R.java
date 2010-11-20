@@ -60,6 +60,14 @@ theme attribute (in the form
 containing a value of this type.
          */
         public static final int secondaryTextColor=0x7f010002;
+        /** <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int tileSize=0x7f010005;
     }
     public static final class drawable {
         public static final int background=0x7f020000;
@@ -86,22 +94,22 @@ containing a value of this type.
         public static final int yellowstar=0x7f020015;
     }
     public static final class id {
-        public static final int Credits=0x7f07000a;
-        public static final int Exit=0x7f07000c;
-        public static final int Help=0x7f070006;
-        public static final int Highscore=0x7f07000b;
-        public static final int Options=0x7f070008;
-        public static final int StartGame=0x7f070005;
+        public static final int Credits=0x7f07000b;
+        public static final int Exit=0x7f07000d;
+        public static final int Help=0x7f070007;
+        public static final int Highscore=0x7f07000c;
+        public static final int Options=0x7f070009;
+        public static final int StartGame=0x7f070006;
         public static final int adver=0x7f070003;
-        public static final int score=0x7f07000d;
-        public static final int snake=0x7f07000e;
+        public static final int score=0x7f07000e;
+        public static final int snake=0x7f070004;
         public static final int tableAbout=0x7f070001;
         public static final int text=0x7f07000f;
-        public static final int widget28=0x7f070004;
+        public static final int widget28=0x7f070005;
         public static final int widget32=0x7f070000;
         public static final int widget34=0x7f070002;
-        public static final int widget35=0x7f070007;
-        public static final int widget38=0x7f070009;
+        public static final int widget35=0x7f070008;
+        public static final int widget38=0x7f07000a;
     }
     public static final class layout {
         public static final int about=0x7f030000;
@@ -137,6 +145,33 @@ containing a value of this type.
         public static final int preferences=0x7f040000;
     }
     public static final class styleable {
+        /** Attributes that can be used with a TileView.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #TileView_tileSize paul.sohier.snake2:tileSize}</code></td><td></td></tr>
+           </table>
+           @see #TileView_tileSize
+         */
+        public static final int[] TileView = {
+            0x7f010005
+        };
+        /**
+          <p>This symbol is the offset where the {@link paul.sohier.snake2.R.attr#tileSize}
+          attribute's value can be found in the {@link #TileView} array.
+
+
+          <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name android:tileSize
+        */
+        public static final int TileView_tileSize = 0;
         /** Attributes that can be used with a com_admob_android_ads_AdView.
            <p>Includes the following attributes:</p>
            <table>
