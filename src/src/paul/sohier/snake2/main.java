@@ -49,8 +49,8 @@ public class main extends Activity {
 	        OptionsButton.setOnClickListener(new OnClickListener() {
 	        	
 	        	public void onClick(View v) {
-	        		//Intent OptionsIntent = new Intent(main.this,Options.class);
-	        		//startActivity(OptionsIntent);
+	        		Intent OptionsIntent = new Intent(main.this,SettingsActivity.class);
+	        		startActivity(OptionsIntent);
 	        	}
 	        });
 	        

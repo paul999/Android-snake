@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+	<PreferenceCategory android:title="@string/settings">
+
+
+		<ListPreference android:title="@string/speed"
+			android:entryValues="@array/speed_name" android:entries="@array/speed"
+			android:defaultValue="200" android:key="delay"></ListPreference>
+
+		<ListPreference android:title="@string/sensor"
+			android:entryValues="@array/sensors" android:entries="@array/sensor_name"
+			android:defaultValue="1" android:key="sensor"></ListPreference>
+
+		<CheckBoxPreference android:summaryOff="@string/sendNoHigh"
+			android:summaryOn="@string/sendHigh" android:disableDependentsState="false"
+			android:defaultValue="true" android:title="@string/highscore"
+			android:key="sendHigh"></CheckBoxPreference>
+		<EditTextPreference android:dialogTitle="@string/name"
+			android:title="@string/name" android:summary="@string/nameExpl"
+			android:dependency="sendHigh" android:key="highName"></EditTextPreference>
+		<CheckBoxPreference android:summaryOff="@string/sendNoTwitter"
+			android:summaryOn="@string/sendTwitter" android:defaultValue="true"
+			android:title="@string/sendTwitter" android:key="sendTwitter"></CheckBoxPreference>
+	</PreferenceCategory>
+
+</PreferenceScreen>

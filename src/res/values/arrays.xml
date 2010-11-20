@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    
+    <string-array name="speed">
+    	<item>800</item>
+    	<item>600</item>
+    	<item>400</item>
+    	<item>200</item>
+    	<item>100</item>
+	</string-array>
+	
+	<string-array name="speed_name">
+		<item>0</item>
+		<item>1</item>
+		<item>2</item>
+		<item>3</item>
+		<item>4</item>
+	</string-array>
+	
+	<string-array name="sensors">
+		<item>1</item>
+		<item>2</item>
+		<item>3</item>
+		<!-- <item>4</item>-->
+	</string-array>
+	<string-array name="sensor_name">
+		<item>trackpad</item>
+		<item>gyroscope</item>
+		<item>Touchscreen</item>
+	</string-array>
+</resources>

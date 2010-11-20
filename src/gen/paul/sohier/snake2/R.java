@@ -8,6 +8,14 @@
 package paul.sohier.snake2;
 
 public final class R {
+    public static final class array {
+        public static final int sensor_name=0x7f050003;
+        /**  <item>4</item>
+         */
+        public static final int sensors=0x7f050002;
+        public static final int speed=0x7f050000;
+        public static final int speed_name=0x7f050001;
+    }
     public static final class attr {
         /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
@@ -74,24 +82,48 @@ containing a value of this type.
         public static final int startgame_pressed=0x7f020011;
     }
     public static final class id {
-        public static final int Credits=0x7f050008;
-        public static final int Help=0x7f050004;
-        public static final int Options=0x7f050006;
-        public static final int StartGame=0x7f050002;
-        public static final int adver=0x7f050009;
-        public static final int widget28=0x7f050001;
-        public static final int widget32=0x7f050000;
-        public static final int widget34=0x7f050003;
-        public static final int widget35=0x7f050005;
-        public static final int widget38=0x7f050007;
+        public static final int Credits=0x7f070008;
+        public static final int Help=0x7f070004;
+        public static final int Options=0x7f070006;
+        public static final int StartGame=0x7f070002;
+        public static final int adver=0x7f070009;
+        public static final int score=0x7f07000a;
+        public static final int snake=0x7f07000b;
+        public static final int text=0x7f07000c;
+        public static final int widget28=0x7f070001;
+        public static final int widget32=0x7f070000;
+        public static final int widget34=0x7f070003;
+        public static final int widget35=0x7f070005;
+        public static final int widget38=0x7f070007;
     }
     public static final class layout {
         public static final int main=0x7f030000;
+        public static final int settings=0x7f030001;
     }
     public static final class string {
-        public static final int app_name=0x7f040001;
-        public static final int hello=0x7f040000;
-        public static final int start=0x7f040002;
+        public static final int app_name=0x7f060001;
+        public static final int hello=0x7f060000;
+        public static final int highscore=0x7f060009;
+        public static final int highscoresNo=0x7f06000a;
+        public static final int name=0x7f06000d;
+        public static final int nameExpl=0x7f06000e;
+        public static final int sendHigh=0x7f06000c;
+        public static final int sendNoHigh=0x7f06000b;
+        public static final int sendNoTwitter=0x7f060010;
+        public static final int sendTwitter=0x7f060011;
+        public static final int sendingHigh=0x7f06000f;
+        public static final int sensor=0x7f060006;
+        /**   SETTINGS 
+         */
+        public static final int settings=0x7f060004;
+        public static final int snake_layout_text_text=0x7f060003;
+        public static final int speed=0x7f060005;
+        public static final int start=0x7f060002;
+        public static final int trackOff=0x7f060008;
+        public static final int trackOn=0x7f060007;
+    }
+    public static final class xml {
+        public static final int preferences=0x7f040000;
     }
     public static final class styleable {
         /** Attributes that can be used with a com_admob_android_ads_AdView.

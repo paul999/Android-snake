@@ -3,4 +3,23 @@
     <string name="hello">Hello World, main!</string>
     <string name="app_name">snake2</string>
 <string name="start">Start new game!</string>
+<string name="snake_layout_text_text"></string>
+
+<!--  SETTINGS -->
+	<string name="settings">Settings</string>
+	<string name="speed">Start speed</string>
+	<string name="sensor">Choose sensor to use</string>
+	<string name="trackOn">Use Orientation sensor</string>
+	<string name="trackOff">Snake controller</string>
+	<string name="highscore">Highscores</string>
+	<string name="highscoresNo">This version does not yet support remote highscores
+	</string>
+	<string name="sendNoHigh">Do not send highscore to central server</string>
+	<string name="sendHigh">Send highscore to central server</string>
+	<string name="name">Name</string>
+	<string name="nameExpl">You name to set in the highscore list</string>
+	<string name="sendingHigh">Sending highscore</string>	
+	
+	<string name="sendNoTwitter">Do not ask to send highscore.</string>
+	<string name="sendTwitter">Ask to send highscore to twitter/facebook/etc.</string>
 </resources>
