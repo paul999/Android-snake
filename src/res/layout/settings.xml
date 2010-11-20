@@ -25,7 +25,7 @@
 			android:textColor="#ff8888ff"			
 	 />
 	
-	<com.snake2.SnakeView
+	<paul.sohier.snake2.homeView
 	 android:id="@+id/snake"
 		android:layout_width="fill_parent"
                 android:layout_height="fill_parent"

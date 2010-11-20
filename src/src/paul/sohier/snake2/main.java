@@ -11,28 +11,29 @@ import android.view.Window;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 
-public class main extends Activity {
-	private boolean DEBUG = true; // Voor release op false zetten!
+@SuppressWarnings("deprecation")
+public class main extends Activity{
+	private homeView mhomeView;
+	private boolean DEBUG = true;
 
-	/** Called when the activity is first created. */
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
+		// No Title bar
 		requestWindowFeature(Window.FEATURE_NO_TITLE);
+
 		setContentView(R.layout.main);
 
 		AdView ad = (AdView) findViewById(R.id.adver);
 		ad.bringToFront();
-		HomeView h = (HomeView) findViewById(R.id.snake);
-		h.updateWalls();
-
-		if (DEBUG) {
-			AdManager.setTestDevices(new String[] { AdManager.TEST_EMULATOR, // Android
-																				// emulator
-					"0BD8378A2247D33B57762EB03AF750D7", // My T-Mobile G1 Test
-														// Phone
-			});
+		if (DEBUG)
+		{
+		  AdManager.setTestDevices( new String[] {                 
+				     AdManager.TEST_EMULATOR,             // Android emulator
+				     "0BD8378A2247D33B57762EB03AF750D7",  // My T-Mobile G1 Test Phone
+		  		     } );  
 		}
+
 		Button StartGameButton = (Button) findViewById(R.id.StartGame);
 		StartGameButton.setOnClickListener(new OnClickListener() {
 
@@ -88,6 +89,14 @@ public class main extends Activity {
 				finish();
 			}
 		});
+				
+		mhomeView = (homeView) findViewById(R.id.snake);
 
+		mhomeView.update();
+	}
+
+	@Override
+	protected void onPause() {
+		super.onPause();
 	}
 }
