@@ -67,19 +67,23 @@ containing a value of this type.
         public static final int credits_button=0x7f020002;
         public static final int credits_highlighted=0x7f020003;
         public static final int credits_pressed=0x7f020004;
-        public static final int help=0x7f020005;
-        public static final int help_button=0x7f020006;
-        public static final int help_highlighted=0x7f020007;
-        public static final int help_pressed=0x7f020008;
-        public static final int icon=0x7f020009;
-        public static final int options=0x7f02000a;
-        public static final int options_button=0x7f02000b;
-        public static final int options_highlighted=0x7f02000c;
-        public static final int options_pressed=0x7f02000d;
-        public static final int startgame=0x7f02000e;
-        public static final int startgame_button=0x7f02000f;
-        public static final int startgame_highlighted=0x7f020010;
-        public static final int startgame_pressed=0x7f020011;
+        public static final int greenstar=0x7f020005;
+        public static final int head=0x7f020006;
+        public static final int help=0x7f020007;
+        public static final int help_button=0x7f020008;
+        public static final int help_highlighted=0x7f020009;
+        public static final int help_pressed=0x7f02000a;
+        public static final int icon=0x7f02000b;
+        public static final int options=0x7f02000c;
+        public static final int options_button=0x7f02000d;
+        public static final int options_highlighted=0x7f02000e;
+        public static final int options_pressed=0x7f02000f;
+        public static final int redstar=0x7f020010;
+        public static final int startgame=0x7f020011;
+        public static final int startgame_button=0x7f020012;
+        public static final int startgame_highlighted=0x7f020013;
+        public static final int startgame_pressed=0x7f020014;
+        public static final int yellowstar=0x7f020015;
     }
     public static final class id {
         public static final int Credits=0x7f07000a;

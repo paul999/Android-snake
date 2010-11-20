@@ -12,6 +12,7 @@ import android.view.View.OnClickListener;
 import android.widget.Button;
 
 public class main extends Activity {
+	private boolean DEBUG = true; // Voor release op false zetten!
     /** Called when the activity is first created. */
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -22,11 +23,13 @@ public class main extends Activity {
 		AdView ad = (AdView) findViewById(R.id.adver);
 		ad.bringToFront();
 		
+		if (DEBUG)
+		{
 		  AdManager.setTestDevices( new String[] {                 
 				     AdManager.TEST_EMULATOR,             // Android emulator
 				     "0BD8378A2247D33B57762EB03AF750D7",  // My T-Mobile G1 Test Phone
 				     } );
-		  
+		} 
 	        Button StartGameButton = (Button)findViewById(R.id.StartGame);
 	        StartGameButton.setOnClickListener(new OnClickListener() {
 	        	
@@ -53,6 +56,15 @@ public class main extends Activity {
 	        		startActivity(OptionsIntent);
 	        	}
 	        });
+
+	        Button AboutButton = (Button)findViewById(R.id.Credits);
+	        AboutButton.setOnClickListener(new OnClickListener() {
+	        	
+	        	public void onClick(View v) {
+	        		Intent AboutIntent = new Intent(main.this,AboutActivity.class);
+	        		startActivity(AboutIntent);
+	        	}
+	        });	        
 	        
 	        Button HighscoreButton = (Button)findViewById(R.id.Highscore);
 	        HighscoreButton.setOnClickListener(new OnClickListener() {
