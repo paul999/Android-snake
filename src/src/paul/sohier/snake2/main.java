@@ -26,12 +26,12 @@ public class main extends Activity{
 
 		AdView ad = (AdView) findViewById(R.id.adver);
 		ad.bringToFront();
-		if (DEBUG)
-		{
-		  AdManager.setTestDevices( new String[] {                 
-				     AdManager.TEST_EMULATOR,             // Android emulator
-				     "0BD8378A2247D33B57762EB03AF750D7",  // My T-Mobile G1 Test Phone
-		  		     } );  
+		if (DEBUG) {
+			AdManager.setTestDevices(new String[] { AdManager.TEST_EMULATOR, // Android
+																				// emulator
+					"0BD8378A2247D33B57762EB03AF750D7", // My T-Mobile G1 Test
+														// Phone
+			});
 		}
 
 		Button StartGameButton = (Button) findViewById(R.id.StartGame);
@@ -72,7 +72,7 @@ public class main extends Activity{
 			}
 		});
 
-		Button HighscoreButton = (Button) findViewById(R.id.Highscore);
+/*		Button HighscoreButton = (Button) findViewById(R.id.Highscore);
 		HighscoreButton.setOnClickListener(new OnClickListener() {
 
 			public void onClick(View v) {
@@ -80,7 +80,7 @@ public class main extends Activity{
 				// Intent(main.this,AboutActivity.class);
 				// startActivity(CreditsIntent);
 			}
-		});
+		});*/
 
 		Button ExitButton = (Button) findViewById(R.id.Exit);
 		ExitButton.setOnClickListener(new OnClickListener() {

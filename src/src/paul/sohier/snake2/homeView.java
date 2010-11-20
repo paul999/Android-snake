@@ -5,6 +5,7 @@ import android.content.res.Resources;
 import android.os.Handler;
 import android.os.Message;
 import android.util.AttributeSet;
+import android.util.Log;
 
 /**
  * homeView: implementation of a simple game of main
@@ -64,8 +65,9 @@ public class homeView extends TileView {
 		initSnakeView();
 	}
 
-	private void initSnakeView() {
+	public void initSnakeView() {
 		setFocusable(true);
+		Log.d("DEBUG","LOGGER");
 
 		Resources r = this.getContext().getResources();
 
@@ -81,7 +83,7 @@ public class homeView extends TileView {
 			long now = System.currentTimeMillis();
 
 			if (now - mLastMove > mMoveDelay) {
-				clearTiles();
+//				clearTiles();
 				updateWalls();;
 				mLastMove = now;
 			}

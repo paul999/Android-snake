@@ -33,13 +33,24 @@ android:gravity="center_horizontal"
 <TableLayout
 android:id="@+id/widget28"
 android:layout_width="295px"
-android:layout_height="300px"
+android:layout_height="400px"
 android:orientation="vertical"
 android:layout_centerVertical="true"
 android:layout_centerHorizontal="true"
 >
+<TextView
+android:id="@+id/widget41"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
 
+></TextView>
+<TextView
+android:id="@+id/widget42"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
 
+>
+</TextView>
 <Button
 android:id="@+id/StartGame"
 android:layout_width="wrap_content"
@@ -97,26 +108,26 @@ android:layout_height="wrap_content"
 
 >
 </TextView>
+
 <Button
 android:id="@+id/Highscore"
 android:layout_width="wrap_content"
 android:layout_height="wrap_content"
-android:background="@drawable/credits_button"
+android:background="@drawable/help_button" 
 >
 </Button>
-
 <TextView
-android:id="@+id/widget38"
+android:id="@+id/widget40"
 android:layout_width="wrap_content"
 android:layout_height="wrap_content"
 
->
-</TextView>
+></TextView>
+
 <Button
 android:id="@+id/Exit"
 android:layout_width="wrap_content"
 android:layout_height="wrap_content"
-android:background="@drawable/credits_button"
+android:background="@drawable/options_button"
 >
 </Button>
 </TableLayout>

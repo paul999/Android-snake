@@ -93,78 +93,52 @@ containing a value of this type.
         public static final int yellowstar=0x7f020014;
     }
     public static final class id {
-        public static final int Credits=0x7f07000a;
-        public static final int Exit=0x7f07000c;
-        public static final int Help=0x7f070006;
-        public static final int Highscore=0x7f07000b;
-        public static final int Options=0x7f070008;
-        public static final int StartGame=0x7f070004;
-        public static final int adver=0x7f070001;
-        public static final int score=0x7f070000;
-        public static final int snake=0x7f070002;
-        public static final int text=0x7f07000d;
-        public static final int widget28=0x7f070003;
-        public static final int widget34=0x7f070005;
-        public static final int widget35=0x7f070007;
-        public static final int widget38=0x7f070009;
+        public static final int Credits=0x7f07000d;
+        public static final int Exit=0x7f07000f;
+        public static final int Help=0x7f070009;
+        public static final int Highscore=0x7f07000e;
+        public static final int Options=0x7f07000b;
+        public static final int StartGame=0x7f070007;
+        public static final int adver=0x7f070000;
+        public static final int score=0x7f070002;
+        public static final int snake=0x7f070003;
+        public static final int text=0x7f070010;
+        public static final int widget28=0x7f070004;
+        public static final int widget34=0x7f070008;
+        public static final int widget35=0x7f07000a;
+        public static final int widget38=0x7f07000c;
+        public static final int widget40=0x7f070001;
+        public static final int widget41=0x7f070005;
+        public static final int widget42=0x7f070006;
     }
     public static final class layout {
-        public static final int main=0x7f030000;
-        public static final int settings=0x7f030001;
+        public static final int about=0x7f030000;
+        public static final int main=0x7f030001;
+        public static final int settings=0x7f030002;
     }
     public static final class string {
-        /**   About 
+        /**   ABOUT 
          */
-        public static final int about=0x7f06000f;
-        public static final int about_message=0x7f060010;
-        public static final int busy=0x7f06001a;
-        /**   changelog 
+        public static final int about=0x7f060011;
+        public static final int app_name=0x7f060000;
+        public static final int highscore=0x7f060008;
+        public static final int highscoresNo=0x7f060009;
+        public static final int name=0x7f06000c;
+        public static final int nameExpl=0x7f06000d;
+        public static final int sendHigh=0x7f06000b;
+        public static final int sendNoHigh=0x7f06000a;
+        public static final int sendNoTwitter=0x7f06000f;
+        public static final int sendTwitter=0x7f060010;
+        public static final int sendingHigh=0x7f06000e;
+        public static final int sensor=0x7f060005;
+        /**   SETTINGS 
          */
-        public static final int change=0x7f060022;
-        public static final int changelog=0x7f060023;
-        public static final int error=0x7f06001b;
-        public static final int highscore=0x7f060007;
-        /**   Highscores 
-         */
-        public static final int highscores=0x7f060013;
-        public static final int highscoresNo=0x7f060014;
-        public static final int mode_lose_prefix=0x7f060002;
-        public static final int mode_lose_suffix=0x7f060003;
-        public static final int mode_pause=0x7f060001;
-        public static final int mode_ready=0x7f060000;
-        public static final int name=0x7f060017;
-        public static final int nameExpl=0x7f060018;
-        public static final int new_highscore=0x7f060005;
-        public static final int no_internet=0x7f06001d;
-        public static final int quit=0x7f060009;
-        public static final int saved=0x7f06001c;
-        public static final int score=0x7f060006;
-        public static final int sendHigh=0x7f060016;
-        public static final int sendNoHigh=0x7f060015;
-        /** 
-		NOTE: need to be space at begin and end of string!
-	
-         */
-        public static final int sendNoTwitter=0x7f060020;
-        public static final int sendTwitter=0x7f060021;
-        public static final int sendingHigh=0x7f060019;
-        /**   Twitter 
-         */
-        public static final int sendingTwitter=0x7f06001e;
-        public static final int sendingTwitter2=0x7f06001f;
-        public static final int sensor=0x7f06000c;
-        public static final int settings=0x7f060008;
-        public static final int snake=0x7f060011;
-        public static final int snake_layout_text_text=0x7f060004;
-        /**   Settings 
-  Settings 
-         */
-        public static final int speed=0x7f06000b;
-        public static final int start=0x7f06000a;
-        public static final int track=0x7f060024;
-        public static final int trackOff=0x7f06000e;
-        public static final int trackOn=0x7f06000d;
-        public static final int welcome=0x7f060012;
+        public static final int settings=0x7f060003;
+        public static final int snake_layout_text_text=0x7f060002;
+        public static final int speed=0x7f060004;
+        public static final int start=0x7f060001;
+        public static final int trackOff=0x7f060007;
+        public static final int trackOn=0x7f060006;
     }
     public static final class xml {
         public static final int preferences=0x7f040000;

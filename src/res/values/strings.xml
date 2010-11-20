@@ -1,78 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
-	<!--
-		Copyright (C) 2007 The Android Open Source Project Licensed under the
-		Apache License, Version 2.0 (the "License"); you may not use this file
-		except in compliance with the License. You may obtain a copy of the
-		License at http://www.apache.org/licenses/LICENSE-2.0 Unless required
-		by applicable law or agreed to in writing, software distributed under
-		the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR
-		CONDITIONS OF ANY KIND, either express or implied. See the License for
-		the specific language governing permissions and limitations under the
-		License.
-	-->
-
 <resources>
-	<string name="mode_ready">Snake\nChoose Menu Start to Play</string>
-	<string name="mode_pause">Paused\nChoose Menu Start to Play</string>
-	<string name="mode_lose_prefix">Game Over\nScore: </string>
-	<string name="mode_lose_suffix">\nChoose Menu Start to Play</string>
+    <string name="app_name">snake2</string>
+<string name="start">Start new game!</string>
+<string name="snake_layout_text_text"></string>
 
-	<string name="snake_layout_text_text"></string>
-	<string name="new_highscore">New highscore!</string>
-	<string name="score">Score</string>
-	<string name="highscore">Highscore</string>
+<!--  SETTINGS -->
 	<string name="settings">Settings</string>
-	<string name="quit">Quit</string>
-	<string name="start">Start</string>
-
-	<!--  Settings -->
 	<string name="speed">Start speed</string>
 	<string name="sensor">Choose sensor to use</string>
 	<string name="trackOn">Use Orientation sensor</string>
 	<string name="trackOff">Snake controller</string>
-
-	<!--  About -->
-	<string name="about">About</string>
-	<string name="about_message">This is a modify version of Snake from the android
-		SDK.\nCopyright (C) 2007 The Android Open Source Project\nModify by
-		Paul Sohier, 2010</string>
-
-	<string name="snake">Snake</string>
-	<string name="welcome">This is a modified version of Snake from the
-		android SDK. Controlling can be done with the gyroscope or trackpad
-		from your device. If you device doesnt have a trackpad, you will need
-		to modify the settings prior to start. </string>
-
-	<!--  Highscores -->
-
-	<string name="highscores">Highscores</string>
+	<string name="highscore">Highscores</string>
 	<string name="highscoresNo">This version does not yet support remote highscores
 	</string>
 	<string name="sendNoHigh">Do not send highscore to central server</string>
 	<string name="sendHigh">Send highscore to central server</string>
 	<string name="name">Name</string>
 	<string name="nameExpl">You name to set in the highscore list</string>
-	<string name="sendingHigh">Sending highscore</string>
-	<string name="busy">Busy...</string>
-	<string name="error">Error sending highscore...</string>
-	<string name="saved">Saved online highscore</string>
-	<string name="no_internet">No internet to save score</string>
-
-	<!--  Twitter -->
-	<string name="sendingTwitter">I just made a new highscore of </string>
-	<string name="sendingTwitter2"> with Snake2 for android </string>
-	<!--
-		NOTE: need to be space at begin and end of string!
-	-->
+	<string name="sendingHigh">Sending highscore</string>	
+	
 	<string name="sendNoTwitter">Do not ask to send highscore.</string>
-	<string name="sendTwitter">Ask to send highscore to twitter/facebook/etc.
-	</string>
-
-	<!--  changelog -->
-	<string name="change">Changelog</string>
-	<string name="changelog">1.0.7\n\n-Added highscore system, make sure to set
-		your name in the settings panel\n\n1.0.8\n-Added
-		twitter/facebook/messages support. Can be disabled in the settings
-		menu.\n\n1.0.9\n- New control type: Touchscreen. Use the 4 sides of the screen (Around the middle) to control the snake. Use settings to choose the control method. NOTE: Users who did choose previously a different controller need to update their settings again!\n- Hide walls when not playing\n\n1.0.10\n- Fixed a small layout bug.</string>
-
+	<string name="sendTwitter">Ask to send highscore to twitter/facebook/etc.</string>
+	
+	<!--  ABOUT -->
+	<string name="about">\n\n\n\nThis game is a rewrite of the orginal Snake from the android SDK. The images used are from this orginal game. \n\n
+	Image and orginal game by the Android Open Source Project, Copyright (C) 2007 The Android Open Source Project.\n\n
+	Rewrite by Paul Sohier, 2010. \n\n
+	For suggestions, bugs and improvements, visit http://android.paulsohier.nl or mail to paulsohier+android@gmail.com</string>
 </resources>
