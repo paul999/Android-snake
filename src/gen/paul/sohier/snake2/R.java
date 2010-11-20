@@ -82,25 +82,32 @@ containing a value of this type.
         public static final int startgame_pressed=0x7f020011;
     }
     public static final class id {
-        public static final int Credits=0x7f070008;
-        public static final int Help=0x7f070004;
-        public static final int Options=0x7f070006;
-        public static final int StartGame=0x7f070002;
-        public static final int adver=0x7f070009;
-        public static final int score=0x7f07000a;
-        public static final int snake=0x7f07000b;
-        public static final int text=0x7f07000c;
-        public static final int widget28=0x7f070001;
+        public static final int Credits=0x7f07000a;
+        public static final int Exit=0x7f07000c;
+        public static final int Help=0x7f070006;
+        public static final int Highscore=0x7f07000b;
+        public static final int Options=0x7f070008;
+        public static final int StartGame=0x7f070005;
+        public static final int adver=0x7f070003;
+        public static final int score=0x7f07000d;
+        public static final int snake=0x7f07000e;
+        public static final int tableAbout=0x7f070001;
+        public static final int text=0x7f07000f;
+        public static final int widget28=0x7f070004;
         public static final int widget32=0x7f070000;
-        public static final int widget34=0x7f070003;
-        public static final int widget35=0x7f070005;
-        public static final int widget38=0x7f070007;
+        public static final int widget34=0x7f070002;
+        public static final int widget35=0x7f070007;
+        public static final int widget38=0x7f070009;
     }
     public static final class layout {
-        public static final int main=0x7f030000;
-        public static final int settings=0x7f030001;
+        public static final int about=0x7f030000;
+        public static final int main=0x7f030001;
+        public static final int settings=0x7f030002;
     }
     public static final class string {
+        /**   ABOUT 
+         */
+        public static final int about=0x7f060012;
         public static final int app_name=0x7f060001;
         public static final int hello=0x7f060000;
         public static final int highscore=0x7f060009;

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+android:id="@+id/widget32"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+android:background="@drawable/background"
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:myapp="http://schemas.android.com/apk/res/paul.sohier.snake"
+>
+<TableLayout
+android:id="@+id/tableAbout"
+android:layout_width="295px"
+android:layout_height="300px"
+android:orientation="vertical"
+android:layout_centerVertical="true"
+android:layout_centerHorizontal="true"
+>
+
+<TextView
+android:id="@+id/widget34"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="@string/about"
+android:textColor="#000000"
+></TextView>
+</TableLayout>
+<com.admob.android.ads.AdView android:id="@+id/adver"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		 android:gravity="bottom"></com.admob.android.ads.AdView>
+
+</RelativeLayout>

@@ -54,14 +54,22 @@ public class main extends Activity {
 	        	}
 	        });
 	        
-	        Button CreditsButton = (Button)findViewById(R.id.Credits);
-	        CreditsButton.setOnClickListener(new OnClickListener() {
+	        Button HighscoreButton = (Button)findViewById(R.id.Highscore);
+	        HighscoreButton.setOnClickListener(new OnClickListener() {
 	        	
 	        	public void onClick(View v) {
-	        		//Intent CreditsIntent= new Intent(main.this,Credits.class);
+	        		//Intent CreditsIntent= new Intent(main.this,AboutActivity.class);
 	        		//startActivity(CreditsIntent);
 	        	}
 	        });
+	        
+	        Button ExitButton = (Button)findViewById(R.id.Exit);
+	        ExitButton.setOnClickListener(new OnClickListener() {
+	        	
+	        	public void onClick(View v) {
+	        		finish();
+	        	}
+	        });	        
 		  
     }
 }

@@ -67,6 +67,35 @@ android:background="@drawable/credits_button"
 >
 </Button>
 
+<TextView
+android:id="@+id/widget38"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+
+>
+</TextView>
+<Button
+android:id="@+id/Highscore"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:background="@drawable/credits_button"
+>
+</Button>
+
+<TextView
+android:id="@+id/widget38"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+
+>
+</TextView>
+<Button
+android:id="@+id/Exit"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:background="@drawable/credits_button"
+>
+</Button>
 </TableLayout>
 <com.admob.android.ads.AdView android:id="@+id/adver"
 		android:layout_width="fill_parent" android:layout_height="wrap_content"
