@@ -151,7 +151,11 @@ public class TileView extends View {
 	 * @param y
 	 */
 	public void setTile(int tileindex, int x, int y) {
+		try
+		{
 		mTileGrid[x][y] = tileindex;
+		}
+		catch(Exception e){}
 	}
 
 

@@ -15,11 +15,21 @@ myapp:secondaryTextColor="#CCCCCC"
 android:gravity="center_horizontal"
 />
 	 
-		
+<TableLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+<TableRow android:gravity="center_vertical|center_horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">		
 <TextView
-android:id="@+id/widget40"
+android:id="@+id/aboutText"
 android:layout_width="wrap_content"
 android:layout_height="wrap_content"
 android:text="@string/about"
+
 ></TextView>
+</TableRow>
+</TableLayout>
+	<paul.sohier.snake2.homeView
+	 android:id="@+id/snake"
+		android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                tileSize="24"
+                />
 </FrameLayout>

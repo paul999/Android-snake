@@ -2,134 +2,63 @@
 
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
 	xmlns:myapp="http://schemas.android.com/apk/res/paul.sohier.snake2"
-	android:layout_width="fill_parent"
-	android:layout_height="fill_parent">
-	<TextView android:id="@+id/score" android:text=""
-			android:layout_width="wrap_content"
-			android:layout_height="wrap_content"	
-			
-			android:gravity="center_horizontal"
-			android:textColor="#ff8888ff"			
-	 />
-	 
-<com.admob.android.ads.AdView
-android:id="@+id/adver"
-android:layout_width="fill_parent"
-android:layout_height="wrap_content"
-myapp:backgroundColor="#000000"
-myapp:primaryTextColor="#FFFFFF"
-myapp:secondaryTextColor="#CCCCCC"
-android:gravity="center_horizontal"
-/>
-	 
-	
-	<paul.sohier.snake2.homeView
-	 android:id="@+id/snake"
-		android:layout_width="fill_parent"
-                android:layout_height="fill_parent"
-                tileSize="24"
-                />
-	
-<TableLayout
-android:id="@+id/widget28"
-android:layout_width="295px"
-android:layout_height="400px"
-android:orientation="vertical"
-android:layout_centerVertical="true"
-android:layout_centerHorizontal="true"
->
-<TextView
-android:id="@+id/widget41"
-android:layout_width="wrap_content"
-android:layout_height="wrap_content"
+	android:layout_width="fill_parent" android:layout_height="fill_parent">
 
-></TextView>
-<TextView
-android:id="@+id/widget42"
-android:layout_width="wrap_content"
-android:layout_height="wrap_content"
+	<com.admob.android.ads.AdView android:id="@+id/adver"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		myapp:backgroundColor="#000000" myapp:primaryTextColor="#FFFFFF"
+		myapp:secondaryTextColor="#CCCCCC" android:gravity="center_horizontal" />
 
->
-</TextView>
-<Button
-android:id="@+id/StartGame"
-android:layout_width="wrap_content"
-android:layout_height="wrap_content"
-android:background="@drawable/startgame_button"
->
-</Button>
-<TextView
-android:id="@+id/widget34"
-android:layout_width="wrap_content"
-android:layout_height="wrap_content"
 
->
-</TextView>
-<Button
-android:id="@+id/Help"
-android:layout_width="wrap_content"
-android:layout_height="wrap_content"
-android:background="@drawable/help_button" 
->
-</Button>
-<TextView
-android:id="@+id/widget35"
-android:layout_width="wrap_content"
-android:layout_height="wrap_content"
+	<paul.sohier.snake2.homeView android:id="@+id/snake"
+		android:layout_width="fill_parent" android:layout_height="fill_parent"
+		tileSize="24" />
 
->
-</TextView>
-<Button
-android:id="@+id/Options"
-android:layout_width="wrap_content"
-android:layout_height="wrap_content"
-android:background="@drawable/options_button" 
->
-</Button>
-<TextView
-android:id="@+id/widget38"
-android:layout_width="wrap_content"
-android:layout_height="wrap_content"
+	<TableLayout android:id="@+id/widget28"
+		android:orientation="vertical" android:layout_height="fill_parent"
+		android:gravity="center_vertical|center_horizontal"
+		android:layout_width="fill_parent">
+			<TextView android:id="@+id/widget41" android:layout_width="wrap_content"
+				android:layout_height="wrap_content"></TextView>
+			<TextView android:id="@+id/widget42" android:layout_width="wrap_content"
+				android:layout_height="wrap_content">
+			</TextView>
+			<Button android:id="@+id/StartGame" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:background="@drawable/startgame_button">
+			</Button>
+			<TextView android:id="@+id/widget34" android:layout_width="wrap_content"
+				android:layout_height="wrap_content">
+			</TextView>
+			<Button android:id="@+id/Help" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:background="@drawable/help_button">
+			</Button>
+			<TextView android:id="@+id/widget35" android:layout_width="wrap_content"
+				android:layout_height="wrap_content">
+			</TextView>
+			<Button android:id="@+id/Options" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:background="@drawable/options_button">
+			</Button>
+			<TextView android:id="@+id/widget38" android:layout_width="wrap_content"
+				android:layout_height="wrap_content">
+			</TextView>
+			<Button android:id="@+id/Credits" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:background="@drawable/credits_button">
+			</Button>
 
->
-</TextView>
-<Button
-android:id="@+id/Credits"
-android:layout_width="wrap_content"
-android:layout_height="wrap_content"
-android:background="@drawable/credits_button"
->
-</Button>
+			<TextView android:id="@+id/widget38" android:layout_width="wrap_content"
+				android:layout_height="wrap_content">
+			</TextView>
 
-<TextView
-android:id="@+id/widget38"
-android:layout_width="wrap_content"
-android:layout_height="wrap_content"
+			<Button android:id="@+id/Highscore" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:background="@drawable/help_button">
+			</Button>
+			<TextView android:id="@+id/widget40" android:layout_width="wrap_content"
+				android:layout_height="wrap_content"></TextView>
 
->
-</TextView>
-
-<Button
-android:id="@+id/Highscore"
-android:layout_width="wrap_content"
-android:layout_height="wrap_content"
-android:background="@drawable/help_button" 
->
-</Button>
-<TextView
-android:id="@+id/widget40"
-android:layout_width="wrap_content"
-android:layout_height="wrap_content"
-
-></TextView>
-
-<Button
-android:id="@+id/Exit"
-android:layout_width="wrap_content"
-android:layout_height="wrap_content"
-android:background="@drawable/options_button"
->
-</Button>
-</TableLayout>
+			<Button android:id="@+id/Exit" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:background="@drawable/options_button">
+			</Button>
+		
+	</TableLayout>
 
 </FrameLayout>
