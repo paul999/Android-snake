@@ -27,4 +27,7 @@
 	Image and orginal game by the Android Open Source Project, Copyright (C) 2007 The Android Open Source Project.\n\n
 	Rewrite by Paul Sohier, 2010. \n\n
 	For suggestions, bugs and improvements, visit http://android.paulsohier.nl or mail to paulsohier+android@gmail.com</string>
+	
+	<!--  HELP -->
+	<string name="help">\n\n\nhelp</string>
 </resources>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:myapp="http://schemas.android.com/apk/res/paul.sohier.snake2"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	 
+<com.admob.android.ads.AdView
+android:id="@+id/adver"
+android:layout_width="fill_parent"
+android:layout_height="wrap_content"
+myapp:backgroundColor="#000000"
+myapp:primaryTextColor="#FFFFFF"
+myapp:secondaryTextColor="#CCCCCC"
+android:gravity="center_horizontal"
+/>
+	 
+<TableLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+<TableRow android:gravity="center_vertical|center_horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">		
+<TextView
+android:id="@+id/helpText"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="@string/help"
+
+></TextView>
+</TableRow>
+</TableLayout>
+	<paul.sohier.snake2.homeView
+	 android:id="@+id/snake"
+		android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                tileSize="24"
+                />
+</FrameLayout>

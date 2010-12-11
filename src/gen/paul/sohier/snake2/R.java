@@ -93,35 +93,40 @@ containing a value of this type.
         public static final int yellowstar=0x7f020014;
     }
     public static final class id {
-        public static final int Credits=0x7f07000c;
-        public static final int Exit=0x7f07000f;
-        public static final int Help=0x7f070008;
-        public static final int Highscore=0x7f07000d;
-        public static final int Options=0x7f07000a;
-        public static final int StartGame=0x7f070006;
+        public static final int Credits=0x7f07000d;
+        public static final int Exit=0x7f070010;
+        public static final int Help=0x7f070009;
+        public static final int Highscore=0x7f07000e;
+        public static final int Options=0x7f07000b;
+        public static final int StartGame=0x7f070007;
         public static final int aboutText=0x7f070001;
         public static final int adver=0x7f070000;
-        public static final int score=0x7f070010;
+        public static final int helpText=0x7f070003;
+        public static final int score=0x7f070011;
         public static final int snake=0x7f070002;
-        public static final int text=0x7f070011;
-        public static final int widget28=0x7f070003;
-        public static final int widget34=0x7f070007;
-        public static final int widget35=0x7f070009;
-        public static final int widget38=0x7f07000b;
-        public static final int widget40=0x7f07000e;
-        public static final int widget41=0x7f070004;
-        public static final int widget42=0x7f070005;
+        public static final int text=0x7f070012;
+        public static final int widget28=0x7f070004;
+        public static final int widget34=0x7f070008;
+        public static final int widget35=0x7f07000a;
+        public static final int widget38=0x7f07000c;
+        public static final int widget40=0x7f07000f;
+        public static final int widget41=0x7f070005;
+        public static final int widget42=0x7f070006;
     }
     public static final class layout {
         public static final int about=0x7f030000;
-        public static final int main=0x7f030001;
-        public static final int settings=0x7f030002;
+        public static final int help=0x7f030001;
+        public static final int main=0x7f030002;
+        public static final int settings=0x7f030003;
     }
     public static final class string {
         /**   ABOUT 
          */
         public static final int about=0x7f060011;
         public static final int app_name=0x7f060000;
+        /**   HELP 
+         */
+        public static final int help=0x7f060012;
         public static final int highscore=0x7f060008;
         public static final int highscoresNo=0x7f060009;
         public static final int name=0x7f06000c;

@@ -16,7 +16,7 @@ import android.widget.Button;
 import android.widget.TextView;
 
 @SuppressWarnings("deprecation")
-public class main extends Activity{
+public class main extends Activity {
 	private homeView mhomeView;
 	private boolean DEBUG = true;
 
@@ -37,12 +37,13 @@ public class main extends Activity{
 														// Phone
 			});
 		}
-		
-		Display display = ((WindowManager) getSystemService(Context.WINDOW_SERVICE)).getDefaultDisplay();
-		int width = display.getWidth() - 75; 
-		
+
+		Display display = ((WindowManager) getSystemService(Context.WINDOW_SERVICE))
+				.getDefaultDisplay();
+		int width = display.getWidth() - 75;
+
 		TextView tv = (TextView) findViewById(R.id.aboutText);
-		
+
 		Button StartGameButton = (Button) findViewById(R.id.StartGame);
 		StartGameButton.setWidth(width);
 		StartGameButton.setOnClickListener(new OnClickListener() {
@@ -59,8 +60,8 @@ public class main extends Activity{
 		HelpButton.setOnClickListener(new OnClickListener() {
 
 			public void onClick(View v) {
-				// Intent HelpIntent = new Intent(main.this,Help.class);
-				// startActivity(HelpIntent);
+				Intent HelpIntent = new Intent(main.this, HelpActivity.class);
+				startActivity(HelpIntent);
 			}
 		});
 
@@ -104,7 +105,7 @@ public class main extends Activity{
 				finish();
 			}
 		});
-				
+
 		mhomeView = (homeView) findViewById(R.id.snake);
 
 		mhomeView.update();
