@@ -1,8 +1,5 @@
 package paul.sohier.snake2;
 
-import com.admob.android.ads.AdManager;
-import com.admob.android.ads.AdView;
-
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
@@ -18,7 +15,6 @@ import android.widget.TextView;
 @SuppressWarnings("deprecation")
 public class main extends Activity {
 	private homeView mhomeView;
-	private boolean DEBUG = true;
 
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
@@ -34,8 +30,6 @@ public class main extends Activity {
 		Display display = ((WindowManager) getSystemService(Context.WINDOW_SERVICE))
 				.getDefaultDisplay();
 		int width = display.getWidth() - 75;
-
-		TextView tv = (TextView) findViewById(R.id.aboutText);
 
 		Button StartGameButton = (Button) findViewById(R.id.StartGame);
 		StartGameButton.setWidth(width);
