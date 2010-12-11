@@ -28,15 +28,8 @@ public class main extends Activity {
 
 		setContentView(R.layout.main);
 
-		AdView ad = (AdView) findViewById(R.id.adver);
-		ad.bringToFront();
-		if (DEBUG) {
-			AdManager.setTestDevices(new String[] { AdManager.TEST_EMULATOR, // Android
-																				// emulator
-					"0BD8378A2247D33B57762EB03AF750D7", // My T-Mobile G1 Test
-														// Phone
-			});
-		}
+		Beheer.setAct(this);
+		Beheer.setAd();
 
 		Display display = ((WindowManager) getSystemService(Context.WINDOW_SERVICE))
 				.getDefaultDisplay();
