@@ -122,11 +122,11 @@ containing a value of this type.
         public static final int settings=0x7f030003;
     }
     public static final class string {
-        /**   ABOUT 
+        /**  ABOUT 
          */
         public static final int about=0x7f060011;
         public static final int app_name=0x7f060000;
-        /**   HELP 
+        /**  HELP 
          */
         public static final int help=0x7f060012;
         public static final int highscore=0x7f060008;
@@ -139,7 +139,7 @@ containing a value of this type.
         public static final int sendTwitter=0x7f060010;
         public static final int sendingHigh=0x7f06000e;
         public static final int sensor=0x7f060005;
-        /**   SETTINGS 
+        /**  SETTINGS 
          */
         public static final int settings=0x7f060003;
         public static final int snake_layout_text_text=0x7f060002;
