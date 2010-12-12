@@ -16,7 +16,10 @@ android:gravity="center_horizontal"
 />
 	 
 <TableLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
-<TableRow android:gravity="center_vertical|center_horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">		
+<TableRow android:gravity="center_vertical|center_horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+<ScrollView android:id="@+id/ScrollView01"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent">		
 <TextView
 android:id="@+id/aboutText"
 android:layout_width="wrap_content"
@@ -24,6 +27,7 @@ android:layout_height="wrap_content"
 android:text="@string/about"
 
 ></TextView>
+</ScrollView>
 </TableRow>
 </TableLayout>
 	<paul.sohier.snake2.homeView

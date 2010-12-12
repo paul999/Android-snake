@@ -29,5 +29,6 @@
 	For suggestions, bugs and improvements, visit http://android.paulsohier.nl or mail to paulsohier+android@gmail.com</string>
 	
 	<!--  HELP -->
-	<string name="help">\n\n\nhelp</string>
+	<string name="help">\n\n\n\nHelp
+	</string>
 </resources>

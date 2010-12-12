@@ -14,9 +14,16 @@ myapp:primaryTextColor="#FFFFFF"
 myapp:secondaryTextColor="#CCCCCC"
 android:gravity="center_horizontal"
 />
-	 
+<TextView android:id="@+id/fill"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:text="\n\n"
+></TextView> 
 <TableLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
 <TableRow android:gravity="center_vertical|center_horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">		
+<ScrollView android:id="@+id/ScrollView01"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent">	
 <TextView
 android:id="@+id/helpText"
 android:layout_width="wrap_content"
@@ -24,6 +31,7 @@ android:layout_height="wrap_content"
 android:text="@string/help"
 
 ></TextView>
+</ScrollView>
 </TableRow>
 </TableLayout>
 	<paul.sohier.snake2.homeView
