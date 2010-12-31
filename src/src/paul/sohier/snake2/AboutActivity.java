@@ -1,5 +1,6 @@
 package paul.sohier.snake2;
 
+import paul.sohier.snake2.general.Beheer;
 import paul.sohier.snake2.view.homeView;
 import android.app.Activity;
 import android.content.Context;

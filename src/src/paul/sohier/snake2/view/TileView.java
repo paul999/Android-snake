@@ -17,7 +17,6 @@
 package paul.sohier.snake2.view;
 
 import paul.sohier.snake2.R;
-import paul.sohier.snake2.R.styleable;
 import android.content.Context;
 import android.content.res.TypedArray;
 import android.graphics.Bitmap;
@@ -25,7 +24,6 @@ import android.graphics.Canvas;
 import android.graphics.Paint;
 import android.graphics.drawable.Drawable;
 import android.util.AttributeSet;
-import android.util.Log;
 import android.view.View;
 
 /**

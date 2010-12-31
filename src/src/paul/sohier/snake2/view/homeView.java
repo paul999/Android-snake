@@ -1,7 +1,6 @@
 package paul.sohier.snake2.view;
 
 import paul.sohier.snake2.R;
-import paul.sohier.snake2.R.drawable;
 import android.content.Context;
 import android.content.res.Resources;
 import android.os.Handler;

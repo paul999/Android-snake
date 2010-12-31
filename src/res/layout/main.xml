@@ -10,7 +10,7 @@
 		myapp:secondaryTextColor="#CCCCCC" android:gravity="center_horizontal" />
 
 
-	<paul.sohier.snake2.homeView android:id="@+id/snake"
+	<paul.sohier.snake2.view.homeView android:id="@+id/snake"
 		android:layout_width="fill_parent" android:layout_height="fill_parent"
 		tileSize="24" />
 

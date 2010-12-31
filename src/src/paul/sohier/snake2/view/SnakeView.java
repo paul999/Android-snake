@@ -14,6 +14,7 @@ import android.util.*;
 import android.view.*;
 
 import paul.sohier.snake2.R;
+import paul.sohier.snake2.general.Beheer;
 
 public class SnakeView extends SurfaceView implements SurfaceHolder.Callback {
 	private static final int RED_STAR = 1;
@@ -63,8 +64,8 @@ public class SnakeView extends SurfaceView implements SurfaceHolder.Callback {
 	protected static int mXTileCount;
 	protected static int mYTileCount;
 
-	protected static int Wsize;
-	protected static int Hsize;
+	private static int Wsize;
+	private static int Hsize;
 
 	private static int mXOffset;
 	private static int mYOffset;
@@ -91,10 +92,13 @@ public class SnakeView extends SurfaceView implements SurfaceHolder.Callback {
 	private int MoveDelayOptions[];
 	private int data[];
 	
-	private final boolean DEBUG = true;
+	private boolean DEBUG;
 
 	public SnakeView(Context context) {
 		super(context);
+		
+		DEBUG = Beheer.getDebug();
+		
 		SurfaceHolder holder = getHolder();
 		holder.addCallback(this);
 		mThread = new SnakeThread(holder, context, new Handler());
@@ -117,7 +121,7 @@ public class SnakeView extends SurfaceView implements SurfaceHolder.Callback {
 
 		updateWalls();		
 		
-		settings = PreferenceManager.getDefaultSharedPreferences(this.getContext());
+		setSettings(PreferenceManager.getDefaultSharedPreferences(this.getContext()));
 	}	
 	
 	private void initGame()
@@ -143,7 +147,7 @@ public class SnakeView extends SurfaceView implements SurfaceHolder.Callback {
 		addRandomApple();
 		addRandomApple();
 
-		int teller = Integer.parseInt(settings.getString("delay", "0"));
+		int teller = Integer.parseInt(getSettings().getString("delay", "0"));
 
 		if (teller < 0 || teller > MoveDelayOptions.length) {
 			teller = 0;
@@ -163,9 +167,15 @@ public class SnakeView extends SurfaceView implements SurfaceHolder.Callback {
 		for (int i = 0; i < 10; i++) {
 			data[i] = (int) (i * start);
 
-			//if (DEBUG)
+			if (DEBUG)
 				Log.d("SNAKE", "data[" + i + "] = " + data[i]);
 		}
+	}
+	
+	public void setDirection(int dir)
+	{
+		// TODO: Validate value;
+		mNextDirection = dir;
 	}
 
 	public SnakeThread getThread() {
@@ -225,8 +235,8 @@ public class SnakeView extends SurfaceView implements SurfaceHolder.Callback {
 		mXOffset = ((w - (mTileSize * mXTileCount)) / 2);
 		mYOffset = (((h - (mTileSize * mYTileCount)) / 2) + 1 * mTileSize);
 
-		Wsize = w;
-		Hsize = h;
+		setWsize(w);
+		setHsize(h);
 
 		mTileGrid = new int[mXTileCount][mYTileCount];
 		clearTiles();
@@ -337,9 +347,9 @@ public class SnakeView extends SurfaceView implements SurfaceHolder.Callback {
 		head = mSnakeTrail.get(0);
 		newHead = new Coordinate(1, 1);
 
-		mDirection = mNextDirection;
+		setmDirection(mNextDirection);
 
-		switch (mDirection) {
+		switch (getmDirection()) {
 		case EAST: {
 			newHead = new Coordinate(head.x + 1, head.y);
 			break;
@@ -431,6 +441,62 @@ public class SnakeView extends SurfaceView implements SurfaceHolder.Callback {
 		}
 
 	}	
+
+	/**
+	 * @param settings the settings to set
+	 */
+	public void setSettings(SharedPreferences settings) {
+		this.settings = settings;
+	}
+
+	/**
+	 * @return the settings
+	 */
+	public SharedPreferences getSettings() {
+		return settings;
+	}
+
+	/**
+	 * @param mDirection the mDirection to set
+	 */
+	public void setmDirection(int mDirection) {
+		this.mDirection = mDirection;
+	}
+
+	/**
+	 * @return the mDirection
+	 */
+	public int getmDirection() {
+		return mDirection;
+	}
+
+	/**
+	 * @param hsize the hsize to set
+	 */
+	public static void setHsize(int hsize) {
+		Hsize = hsize;
+	}
+
+	/**
+	 * @return the hsize
+	 */
+	public static int getHsize() {
+		return Hsize;
+	}
+
+	/**
+	 * @param wsize the wsize to set
+	 */
+	public static void setWsize(int wsize) {
+		Wsize = wsize;
+	}
+
+	/**
+	 * @return the wsize
+	 */
+	public static int getWsize() {
+		return Wsize;
+	}
 
 	class FPSTimer {
 		private int mFPS;
