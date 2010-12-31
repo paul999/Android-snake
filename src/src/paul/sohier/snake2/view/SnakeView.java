@@ -6,6 +6,7 @@ import java.util.Random;
 
 import android.os.*;
 import android.preference.PreferenceManager;
+import android.app.Activity;
 import android.content.*;
 import android.content.res.*;
 import android.graphics.*;
@@ -93,8 +94,9 @@ public class SnakeView extends SurfaceView implements SurfaceHolder.Callback {
 	private int data[];
 	
 	private boolean DEBUG;
+	private Activity activity;
 
-	public SnakeView(Context context) {
+	public SnakeView(Context context, Activity act) {
 		super(context);
 		
 		DEBUG = Beheer.getDebug();
@@ -102,6 +104,7 @@ public class SnakeView extends SurfaceView implements SurfaceHolder.Callback {
 		SurfaceHolder holder = getHolder();
 		holder.addCallback(this);
 		mThread = new SnakeThread(holder, context, new Handler());
+		activity = act;
 //		setFocusable(true); // need to get the key events
 
 		Resources r = this.getContext().getResources();
@@ -373,6 +376,7 @@ public class SnakeView extends SurfaceView implements SurfaceHolder.Callback {
 		if ((newHead.x < 1) || (newHead.y < 1) || (newHead.x > mXTileCount - 2)
 				|| (newHead.y > mYTileCount - 2)) {
 			mThread.setRunning(false);
+			activity.finish();
 			return;
 
 		}
@@ -385,6 +389,7 @@ public class SnakeView extends SurfaceView implements SurfaceHolder.Callback {
 				if (DEBUG)
 					Log.d("SNAKE", "head dead");
 				mThread.setRunning(false);
+				activity.finish();
 				return;
 			}
 		}

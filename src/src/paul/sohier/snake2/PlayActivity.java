@@ -19,10 +19,10 @@ public class PlayActivity extends Activity {
         super.onCreate(savedInstanceState);  
         requestWindowFeature(Window.FEATURE_NO_TITLE);  
         
-        Beheer.setContext(this.getBaseContext());
+        Beheer.setContext(this);
         
         if (view == null)  
-            view = new SnakeView(this);  
+            view = new SnakeView(this, this);  
         
         setContentView(view);  
     }  

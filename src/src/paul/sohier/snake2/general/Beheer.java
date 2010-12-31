@@ -82,6 +82,7 @@ public class Beheer {
 		return DEBUG;
 	}
 
+	@SuppressWarnings("unused")
 	public static boolean makeHttpRequest(long mScore2) {
 		try {
 			if (getContext()  == null)
@@ -93,11 +94,7 @@ public class Beheer {
 				return false;
 			}
 			// Create a URL for the desired page URL
-			// TelephonyManager mTelephonyMgr =
-			// (TelephonyManager)getSystemService(TELEPHONY_SERVICE);
-			// String imei = mTelephonyMgr.getDeviceId();
 
-			// android.provider.Settings.Secure
 			String Android_ID = android.provider.Settings.System.getString(getContext().getContentResolver(),
 					android.provider.Settings.System.ANDROID_ID);
 
@@ -121,6 +118,9 @@ public class Beheer {
 				// character(s)
 			}
 			in.close();
+			if (str == "")
+				return false;
+			
 		} catch (MalformedURLException e) {
 			if (DEBUG)
 				Log.d("ERROR", "exc", e);
