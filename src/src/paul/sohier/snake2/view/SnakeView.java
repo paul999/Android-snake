@@ -437,6 +437,8 @@ public class SnakeView extends SurfaceView implements SurfaceHolder.Callback {
 		private double mSecPerFrame;
 		private double mSecTiming;
 		private long mCur;
+		private long next;
+		private long passage_time;
 
 		public FPSTimer(int fps) {
 			mFPS = fps;
@@ -450,8 +452,8 @@ public class SnakeView extends SurfaceView implements SurfaceHolder.Callback {
 		}
 
 		public boolean elapsed() {
-			long next = System.currentTimeMillis();
-			long passage_time = next - mCur;
+			next = System.currentTimeMillis();
+			passage_time = next - mCur;
 			mCur = next;
 			mSecTiming += (passage_time / 1000.0);
 			mSecTiming -= mSecPerFrame;

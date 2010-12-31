@@ -14,8 +14,10 @@
  * limitations under the License.
  */
 
-package paul.sohier.snake2;
+package paul.sohier.snake2.view;
 
+import paul.sohier.snake2.R;
+import paul.sohier.snake2.R.styleable;
 import android.content.Context;
 import android.content.res.TypedArray;
 import android.graphics.Bitmap;
