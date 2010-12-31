@@ -18,6 +18,9 @@ public class PlayActivity extends Activity {
     public void onCreate(Bundle savedInstanceState) {  
         super.onCreate(savedInstanceState);  
         requestWindowFeature(Window.FEATURE_NO_TITLE);  
+        
+        Beheer.setContext(this.getBaseContext());
+        
         if (view == null)  
             view = new SnakeView(this);  
         

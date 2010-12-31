@@ -447,6 +447,8 @@ public class SnakeView extends SurfaceView implements SurfaceHolder.Callback {
 	 */
 	public void setSettings(SharedPreferences settings) {
 		this.settings = settings;
+		
+		Beheer.setSettings(settings);
 	}
 
 	/**
