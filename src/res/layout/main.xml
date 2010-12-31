@@ -18,47 +18,47 @@
 		android:orientation="vertical" android:layout_height="fill_parent"
 		android:gravity="center_vertical|center_horizontal"
 		android:layout_width="fill_parent">
-			<TextView android:id="@+id/widget41" android:layout_width="wrap_content"
-				android:layout_height="wrap_content"></TextView>
-			<TextView android:id="@+id/widget42" android:layout_width="wrap_content"
-				android:layout_height="wrap_content">
-			</TextView>
-			<Button android:id="@+id/StartGame" android:layout_width="wrap_content"
-				android:layout_height="wrap_content" android:background="@drawable/startgame_button">
-			</Button>
-			<TextView android:id="@+id/widget34" android:layout_width="wrap_content"
-				android:layout_height="wrap_content">
-			</TextView>
-			<Button android:id="@+id/Help" android:layout_width="wrap_content"
-				android:layout_height="wrap_content" android:background="@drawable/help_button">
-			</Button>
-			<TextView android:id="@+id/widget35" android:layout_width="wrap_content"
-				android:layout_height="wrap_content">
-			</TextView>
-			<Button android:id="@+id/Options" android:layout_width="wrap_content"
-				android:layout_height="wrap_content" android:background="@drawable/options_button">
-			</Button>
-			<TextView android:id="@+id/widget38" android:layout_width="wrap_content"
-				android:layout_height="wrap_content">
-			</TextView>
-			<Button android:id="@+id/Credits" android:layout_width="wrap_content"
-				android:layout_height="wrap_content" android:background="@drawable/credits_button">
-			</Button>
+		<TextView android:id="@+id/widget41" android:layout_width="wrap_content"
+			android:layout_height="wrap_content"></TextView>
+		<TextView android:id="@+id/widget42" android:layout_width="wrap_content"
+			android:layout_height="wrap_content">
+		</TextView>
+		<Button android:id="@+id/StartGame" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:background="@drawable/startgame_button">
+		</Button>
+		<TextView android:id="@+id/widget34" android:layout_width="wrap_content"
+			android:layout_height="wrap_content">
+		</TextView>
+		<Button android:id="@+id/Help" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:background="@drawable/help_button">
+		</Button>
+		<TextView android:id="@+id/widget35" android:layout_width="wrap_content"
+			android:layout_height="wrap_content">
+		</TextView>
+		<Button android:id="@+id/Options" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:background="@drawable/options_button">
+		</Button>
+		<TextView android:id="@+id/widget38" android:layout_width="wrap_content"
+			android:layout_height="wrap_content">
+		</TextView>
+		<Button android:id="@+id/Credits" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:background="@drawable/credits_button">
+		</Button>
 
-			<TextView android:id="@+id/widget38" android:layout_width="wrap_content"
-				android:layout_height="wrap_content">
-			</TextView>
+		<TextView android:id="@+id/widget38" android:layout_width="wrap_content"
+			android:layout_height="wrap_content">
+		</TextView>
 
-			<Button android:id="@+id/Highscore" android:layout_width="wrap_content"
-				android:layout_height="wrap_content" android:background="@drawable/help_button">
-			</Button>
-			<TextView android:id="@+id/widget40" android:layout_width="wrap_content"
-				android:layout_height="wrap_content"></TextView>
+		<Button android:id="@+id/Highscore" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:background="@drawable/help_button">
+		</Button>
+		<TextView android:id="@+id/widget40" android:layout_width="wrap_content"
+			android:layout_height="wrap_content"></TextView>
 
-			<Button android:id="@+id/Exit" android:layout_width="wrap_content"
-				android:layout_height="wrap_content" android:background="@drawable/options_button">
-			</Button>
-		
+		<Button android:id="@+id/Exit" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:background="@drawable/options_button">
+		</Button>
+
 	</TableLayout>
 
 </FrameLayout>

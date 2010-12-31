@@ -10,7 +10,6 @@ import android.view.Window;
 import android.view.WindowManager;
 import android.view.View.OnClickListener;
 import android.widget.Button;
-import android.widget.TextView;
 
 @SuppressWarnings("deprecation")
 public class main extends Activity {
@@ -36,9 +35,9 @@ public class main extends Activity {
 		StartGameButton.setOnClickListener(new OnClickListener() {
 
 			public void onClick(View v) {
-				// Intent StartGameIntent = new
-				// Intent(main.this,StartGame.class);
-				// startActivity(StartGameIntent);
+				 Intent StartGameIntent = new
+				 Intent(main.this,PlayActivity.class);
+				 startActivity(StartGameIntent);
 			}
 		});
 
@@ -78,9 +77,9 @@ public class main extends Activity {
 		HighscoreButton.setOnClickListener(new OnClickListener() {
 
 			public void onClick(View v) {
-				// Intent CreditsIntent= new
-				// Intent(main.this,AboutActivity.class);
-				// startActivity(CreditsIntent);
+				 Intent HighIntent= new
+				 Intent(main.this,HighActivity.class);
+				 startActivity(HighIntent);
 			}
 		});
 

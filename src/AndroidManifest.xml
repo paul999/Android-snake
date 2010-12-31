@@ -19,7 +19,7 @@
 		<activity android:name="AboutActivity"
 			android:screenOrientation="portrait">
 		</activity>
-		<activity android:name="HighscoreActivity"
+		<activity android:name="HighActivity"
 			android:screenOrientation="portrait">
 		</activity>
 		<activity android:name="PlayActivity"
