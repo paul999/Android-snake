@@ -31,7 +31,7 @@
 		<activity android:name="ScoreActivity"
 			android:screenOrientation="portrait">
 		</activity>
-		<meta-data android:value="a14c8e50ec5250b" android:name="ADMOB_PUBLISHER_ID" />
+		<meta-data android:value="a14d20f7d94126b" android:name="ADMOB_PUBLISHER_ID" />
 
 	</application>
 

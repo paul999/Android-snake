@@ -40,7 +40,7 @@ public class Beheer {
 		if (getDebug()) {
 			AdManager.setTestDevices(new String[] { AdManager.TEST_EMULATOR, // Android
 																				// emulator
-					"0BD8378A2247D33B57762EB03AF750D7", // My T-Mobile G1 Test
+					//"0BD8378A2247D33B57762EB03AF750D7", // My T-Mobile G1 Test
 														// Phone
 			});
 		}
