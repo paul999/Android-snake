@@ -1,5 +1,8 @@
 package paul.sohier.snake2;
 
+import java.util.Formatter;
+import java.util.Locale;
+
 import paul.sohier.snake2.general.Beheer;
 import paul.sohier.snake2.view.homeView;
 import android.app.Activity;
@@ -17,6 +20,8 @@ import android.widget.TextView;
 public class ScoreActivity extends Activity {
 	private static ProgressDialog dialog;
 	private SharedPreferences settings;
+	
+	StringBuilder sb;
 
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -24,7 +29,22 @@ public class ScoreActivity extends Activity {
 		// No Title bar
 		requestWindowFeature(Window.FEATURE_NO_TITLE);
 
-		setContentView(R.layout.about);
+		setContentView(R.layout.score);
+		
+		settings = PreferenceManager.getDefaultSharedPreferences(this);
+
+		int mScore = (int) settings.getLong("tmpscore", 0);
+
+		sb = new StringBuilder();
+		// Send all output to the Appendable object sb
+		Formatter formatter = new Formatter(sb, Locale.getDefault());
+
+		formatter.format(getString(R.string.score_done), mScore);
+		
+		if (mScore < 5)
+		{
+			sb.append(getString(R.string.low_score));
+		}
 
 		Beheer.setAct(this);
 		Beheer.setAd();
@@ -37,11 +57,9 @@ public class ScoreActivity extends Activity {
 				.getDefaultDisplay();
 		int width = display.getWidth();
 
-		TextView tv = (TextView) findViewById(R.id.aboutText);
+		TextView tv = (TextView) findViewById(R.id.scoreText);
 
 		tv.setWidth(width - 75);
-
-		settings = PreferenceManager.getDefaultSharedPreferences(this);
 
 		if (settings.getBoolean("savescore", false)) {
 			Log.d("DEBUG", "SCORE SAVE!");
@@ -55,11 +73,9 @@ public class ScoreActivity extends Activity {
 
 			dialog.show();
 
-			String str = "";
-
 			if (!Beheer.isOnline()) {
-				str = str + "\n\n"
-						+ getResources().getString(R.string.no_internet);
+				sb.append("\n\n"
+						+ getResources().getString(R.string.no_internet));
 				dialog.dismiss();
 				if (Beheer.getDebug())
 					Log.d("Snake", "no_internet");
@@ -72,21 +88,29 @@ public class ScoreActivity extends Activity {
 				public void run() {
 
 					int mScore = (int) settings.getLong("tmpscore", 0);
-					
+
 					SharedPreferences.Editor editor = settings.edit();
 					editor.putLong("tmpscore", 0);
 					editor.commit();
-					
+
 					Beheer.makeHttpRequest(mScore);
 					dialog.dismiss();
+					
+					sb.append(getString(R.string.score_saved));
+					
+					TextView t = (TextView) findViewById(R.id.scoreText);
+//					t.setText(sb);
 				}
 			}).start();
 
 			SharedPreferences.Editor editor = settings.edit();
 			editor.putBoolean("savescore", false);
-			
+
 			editor.commit();
 			editor = null;
 		}
+		
+		TextView t = (TextView) findViewById(R.id.scoreText);
+		t.setText(sb);		
 	}
 }

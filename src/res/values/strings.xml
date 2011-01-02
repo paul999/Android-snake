@@ -39,4 +39,8 @@
 	
 	<string name="busy">Sending...</string>
 	<string name="no_internet">No internet</string>
+	
+	<string name="score_done">\n\n\n\nGame Over!\n\nYour score: %1$s.</string>
+	<string name="score_saved">\n\nScore saved!</string>
+	<string name="low_score">\n\nYou had a low score, did you read the instructions?</string>
 </resources>

@@ -95,18 +95,12 @@ public class SnakeView extends SurfaceView implements SurfaceHolder.Callback {
 	private int data[];
 	
 	private boolean DEBUG;
-	private Activity activity;
-	
-	private static Handler handler = new Handler() {
-
-	};	
+	private Activity activity;	
 
 	public SnakeView(Context context, Activity act) {
 		super(context);
 		
 		DEBUG = Beheer.getDebug();
-		
-		Log.d("DEUBG:", DEBUG + " ");
 		
 		SurfaceHolder holder = getHolder();
 		holder.addCallback(this);
@@ -525,10 +519,6 @@ public class SnakeView extends SurfaceView implements SurfaceHolder.Callback {
 	 */
 	public static int getWsize() {
 		return Wsize;
-	}
-
-	public Handler getHandler() {
-		return handler;
 	}
 
 	class FPSTimer {

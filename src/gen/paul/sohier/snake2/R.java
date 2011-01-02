@@ -105,9 +105,10 @@ containing a value of this type.
         public static final int fill=0x7f070004;
         public static final int helpText=0x7f070005;
         public static final int highText=0x7f070006;
-        public static final int score=0x7f070014;
+        public static final int score=0x7f070015;
+        public static final int scoreText=0x7f070014;
         public static final int snake=0x7f070003;
-        public static final int text=0x7f070015;
+        public static final int text=0x7f070016;
         public static final int widget28=0x7f070007;
         public static final int widget34=0x7f07000b;
         public static final int widget35=0x7f07000d;
@@ -121,7 +122,8 @@ containing a value of this type.
         public static final int help=0x7f030001;
         public static final int high=0x7f030002;
         public static final int main=0x7f030003;
-        public static final int settings=0x7f030004;
+        public static final int score=0x7f030004;
+        public static final int settings=0x7f030005;
     }
     public static final class string {
         /**  ABOUT 
@@ -134,9 +136,12 @@ containing a value of this type.
         public static final int help=0x7f060012;
         public static final int highscore=0x7f060008;
         public static final int highscoresNo=0x7f060009;
+        public static final int low_score=0x7f060017;
         public static final int name=0x7f06000c;
         public static final int nameExpl=0x7f06000d;
         public static final int no_internet=0x7f060014;
+        public static final int score_done=0x7f060015;
+        public static final int score_saved=0x7f060016;
         public static final int sendHigh=0x7f06000b;
         public static final int sendNoHigh=0x7f06000a;
         public static final int sendNoTwitter=0x7f06000f;
