@@ -23,10 +23,12 @@ public class Beheer {
 	static private Activity act;
 
 	private static final boolean DEBUG = true;
-	
+
 	private static SharedPreferences settings;
-	
+
 	private static Context context;
+
+
 
 	static public void setAct(Activity a) {
 		act = a;
@@ -45,13 +47,11 @@ public class Beheer {
 		AdManager.setAllowUseOfLocation(true);
 	}
 
-	public static void showAlertDialog(int messageId,
-			String string) {
-		if (getContext()  == null)
-		{
+	public static void showAlertDialog(int messageId, String string) {
+		if (getContext() == null) {
 			return;
 		}
-		
+
 		AlertDialog.Builder builder = new AlertDialog.Builder(getContext());
 		builder.setMessage(messageId);
 		builder.setTitle(string);
@@ -60,8 +60,7 @@ public class Beheer {
 	}
 
 	public static boolean isOnline() {
-		if (getContext()  == null)
-		{
+		if (getContext() == null) {
 			return false;
 		}
 		try {
@@ -85,33 +84,33 @@ public class Beheer {
 	@SuppressWarnings("unused")
 	public static boolean makeHttpRequest(long mScore2) {
 		try {
-			if (getContext()  == null)
-			{
+			if (getContext() == null) {
 				return false;
-			}			
-			if (!isOnline())
-			{
+			}
+			if (!isOnline()) {
 				return false;
 			}
 			// Create a URL for the desired page URL
 
-			String Android_ID = android.provider.Settings.System.getString(getContext().getContentResolver(),
+			String Android_ID = android.provider.Settings.System.getString(
+					getContext().getContentResolver(),
 					android.provider.Settings.System.ANDROID_ID);
 
-			int usesensor = Integer
-					.parseInt(getSettings().getString("sensor", "1"));
+			int usesensor = Integer.parseInt(getSettings().getString("sensor",
+					"1"));
 
 			URL url = new URL(
 					"http://android.paulsohier.nl/savehigh.php?score="
 							+ mScore2 + "&user="
 							+ settings.getString("highName", "") + "&id="
 							+ Android_ID + "&sensor=" + usesensor + "&version="
-							+ settings.getInt("versionCurrent", 0));
-			
-			if (DEBUG)Log.d("URL:", url.toString());
+							+ settings.getInt("versionCurrent", 94));
+
+			if (DEBUG)
+				Log.d("URL:", url.toString());
 			// Read all the text returned by the server
-			BufferedReader in = new BufferedReader(new InputStreamReader(url
-					.openStream()));
+			BufferedReader in = new BufferedReader(new InputStreamReader(
+					url.openStream()));
 			String str = "";
 			while ((str = in.readLine()) != null) {
 				// str is one line of text; readLine() strips the newline
@@ -120,7 +119,7 @@ public class Beheer {
 			in.close();
 			if (str == "")
 				return false;
-			
+
 		} catch (MalformedURLException e) {
 			if (DEBUG)
 				Log.d("ERROR", "exc", e);
@@ -134,7 +133,8 @@ public class Beheer {
 	}
 
 	/**
-	 * @param settings the settings to set
+	 * @param settings
+	 *            the settings to set
 	 */
 	public static void setSettings(SharedPreferences settings) {
 		Beheer.settings = settings;
@@ -148,7 +148,8 @@ public class Beheer {
 	}
 
 	/**
-	 * @param context the context to set
+	 * @param context
+	 *            the context to set
 	 */
 	public static void setContext(Context context) {
 		Beheer.context = context;

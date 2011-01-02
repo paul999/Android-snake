@@ -128,6 +128,7 @@ containing a value of this type.
          */
         public static final int about=0x7f060011;
         public static final int app_name=0x7f060000;
+        public static final int busy=0x7f060013;
         /**  HELP 
          */
         public static final int help=0x7f060012;
@@ -135,6 +136,7 @@ containing a value of this type.
         public static final int highscoresNo=0x7f060009;
         public static final int name=0x7f06000c;
         public static final int nameExpl=0x7f06000d;
+        public static final int no_internet=0x7f060014;
         public static final int sendHigh=0x7f06000b;
         public static final int sendNoHigh=0x7f06000a;
         public static final int sendNoTwitter=0x7f06000f;

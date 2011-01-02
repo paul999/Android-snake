@@ -15,6 +15,7 @@ import android.util.*;
 import android.view.*;
 
 import paul.sohier.snake2.R;
+import paul.sohier.snake2.ScoreActivity;
 import paul.sohier.snake2.general.Beheer;
 
 public class SnakeView extends SurfaceView implements SurfaceHolder.Callback {
@@ -95,11 +96,17 @@ public class SnakeView extends SurfaceView implements SurfaceHolder.Callback {
 	
 	private boolean DEBUG;
 	private Activity activity;
+	
+	private static Handler handler = new Handler() {
+
+	};	
 
 	public SnakeView(Context context, Activity act) {
 		super(context);
 		
 		DEBUG = Beheer.getDebug();
+		
+		Log.d("DEUBG:", DEBUG + " ");
 		
 		SurfaceHolder holder = getHolder();
 		holder.addCallback(this);
@@ -375,8 +382,7 @@ public class SnakeView extends SurfaceView implements SurfaceHolder.Callback {
 		// For now we have a 1-square wall around the entire arena
 		if ((newHead.x < 1) || (newHead.y < 1) || (newHead.x > mXTileCount - 2)
 				|| (newHead.y > mYTileCount - 2)) {
-			mThread.setRunning(false);
-			activity.finish();
+			end();
 			return;
 
 		}
@@ -388,8 +394,7 @@ public class SnakeView extends SurfaceView implements SurfaceHolder.Callback {
 			if (c.equals(newHead)) {
 				if (DEBUG)
 					Log.d("SNAKE", "head dead");
-				mThread.setRunning(false);
-				activity.finish();
+				end();
 				return;
 			}
 		}
@@ -446,6 +451,23 @@ public class SnakeView extends SurfaceView implements SurfaceHolder.Callback {
 		}
 
 	}	
+	
+	private void end()
+	{
+		Log.d("SCORE:", score + " ");
+
+		SharedPreferences.Editor editor = settings.edit();
+		editor.putLong("tmpscore", score);
+		editor.putBoolean("savescore", true);
+		editor.commit();
+		editor = null;
+		
+		mThread.setRunning(false);
+		activity.finish();
+		
+		Intent AboutIntent = new Intent(getContext(), ScoreActivity.class);
+		getContext().startActivity(AboutIntent);		
+	}
 
 	/**
 	 * @param settings the settings to set
@@ -505,6 +527,10 @@ public class SnakeView extends SurfaceView implements SurfaceHolder.Callback {
 		return Wsize;
 	}
 
+	public Handler getHandler() {
+		return handler;
+	}
+
 	class FPSTimer {
 		private int mFPS;
 		private double mSecPerFrame;
@@ -551,7 +577,7 @@ public class SnakeView extends SurfaceView implements SurfaceHolder.Callback {
 		private Paint paint;
 		private long now;
 
-		private double rfps = 0.00d;
+		private double rfps = 0.00d;		
 
 		public SnakeThread(SurfaceHolder holder, Context context,
 				Handler handler) {

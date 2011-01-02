@@ -28,6 +28,9 @@
 		<activity android:name="HelpActivity"
 			android:screenOrientation="portrait">
 		</activity>		
+		<activity android:name="ScoreActivity"
+			android:screenOrientation="portrait">
+		</activity>
 		<meta-data android:value="a14c8e50ec5250b" android:name="ADMOB_PUBLISHER_ID" />
 
 	</application>
