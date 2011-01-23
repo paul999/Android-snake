@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-	package="paul.sohier.snake2" android:versionCode="200"
-	android:versionName="2.0.0" android:installLocation="preferExternal">
+	package="paul.sohier.snake2" android:installLocation="preferExternal" android:versionCode="201" android:versionName="2.0.1">
 	<application android:label="Snake2" android:icon="@drawable/icon"  installLocation="preferExternal">
 		<activity android:name="main" android:screenOrientation="portrait"
 			android:configChanges="keyboardHidden|orientation">
