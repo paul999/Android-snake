@@ -13,14 +13,23 @@
 		android:layout_height="fill_parent">
 		<TableRow android:gravity="center_vertical|center_horizontal"
 			android:layout_width="fill_parent" android:layout_height="fill_parent">
-			<ScrollView android:id="@+id/ScrollView01"
-				android:layout_width="fill_parent" android:layout_height="fill_parent">
-				<TextView android:id="@+id/scoreText" android:layout_width="wrap_content"
-					android:layout_height="wrap_content"></TextView>
-			</ScrollView>
+			<TextView android:id="@+id/scoreText" android:layout_width="wrap_content"
+				android:layout_height="wrap_content"></TextView>
+		</TableRow>
+		<TableRow android:gravity="center_vertical|center_horizontal"
+			android:layout_width="fill_parent" android:layout_height="fill_parent">
+			<Button android:id="@+id/retry" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:background="@drawable/retry_button">
+			</Button>
+		</TableRow>
+		<TableRow android:gravity="center_vertical|center_horizontal"
+			android:layout_width="fill_parent" android:layout_height="fill_parent">
+			<Button android:id="@+id/home" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:background="@drawable/home_button">
+			</Button>
 		</TableRow>
 	</TableLayout>
-	<paul.sohier.snake2.view.homeView android:id="@+id/snake"
-		android:layout_width="fill_parent" android:layout_height="fill_parent"
-		tileSize="24" />
+	<paul.sohier.snake2.view.homeView
+		android:id="@+id/snake" android:layout_width="fill_parent"
+		android:layout_height="fill_parent" tileSize="24" />
 </FrameLayout>

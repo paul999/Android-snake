@@ -8,13 +8,17 @@ import paul.sohier.snake2.view.homeView;
 import android.app.Activity;
 import android.app.ProgressDialog;
 import android.content.Context;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.util.Log;
 import android.view.Display;
+import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
+import android.view.View.OnClickListener;
+import android.widget.Button;
 import android.widget.TextView;
 
 public class ScoreActivity extends Activity {
@@ -60,6 +64,16 @@ public class ScoreActivity extends Activity {
 		TextView tv = (TextView) findViewById(R.id.scoreText);
 
 		tv.setWidth(width - 75);
+		
+		if (settings.getLong("tmpscore", 0) > settings.getInt("highscore", 0))
+		{
+			formatter.format(getString(R.string.localHigh));
+			
+			SharedPreferences.Editor editor = settings.edit();
+			editor.putInt("highscore", (int)settings.getLong("tmpscore", 0));
+			editor.commit();
+			
+		}		
 
 		if (settings.getBoolean("savescore", false)) {
 			Log.d("DEBUG", "SCORE SAVE!");
@@ -97,9 +111,6 @@ public class ScoreActivity extends Activity {
 					dialog.dismiss();
 					
 					sb.append(getString(R.string.score_saved));
-					
-					TextView t = (TextView) findViewById(R.id.scoreText);
-//					t.setText(sb);
 				}
 			}).start();
 
@@ -111,6 +122,25 @@ public class ScoreActivity extends Activity {
 		}
 		
 		TextView t = (TextView) findViewById(R.id.scoreText);
-		t.setText(sb);		
+		t.setText(sb);
+		
+		Button RetryButton = (Button) findViewById(R.id.retry);
+
+		RetryButton.setOnClickListener(new OnClickListener() {
+
+			public void onClick(View v) {
+				finish();
+				Intent StartGameIntent = new Intent(ScoreActivity.this,PlayActivity.class);
+				startActivity(StartGameIntent);
+			}
+		});
+
+		Button homeButton = (Button) findViewById(R.id.home);
+
+		homeButton.setOnClickListener(new OnClickListener() {
+			public void onClick(View v) {
+				finish();
+			}
+		});		
 	}
 }

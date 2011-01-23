@@ -11,6 +11,11 @@
 			android:entryValues="@array/sensors" android:entries="@array/sensor_name"
 			android:defaultValue="1" android:key="sensor"></ListPreference>
 
+		<CheckBoxPreference android:summaryOff="@string/noDisplayfps"
+			android:summaryOn="@string/Displayfps" android:disableDependentsState="false"
+			android:defaultValue="true" android:title="@string/dfps"
+			android:key="fps"></CheckBoxPreference>
+
 		<CheckBoxPreference android:summaryOff="@string/sendNoHigh"
 			android:summaryOn="@string/sendHigh" android:disableDependentsState="false"
 			android:defaultValue="true" android:title="@string/highscore"

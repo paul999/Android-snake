@@ -80,17 +80,25 @@ containing a value of this type.
         public static final int help_button=0x7f020007;
         public static final int help_highlighted=0x7f020008;
         public static final int help_pressed=0x7f020009;
-        public static final int icon=0x7f02000a;
-        public static final int options=0x7f02000b;
-        public static final int options_button=0x7f02000c;
-        public static final int options_highlighted=0x7f02000d;
-        public static final int options_pressed=0x7f02000e;
-        public static final int redstar=0x7f02000f;
-        public static final int startgame=0x7f020010;
-        public static final int startgame_button=0x7f020011;
-        public static final int startgame_highlighted=0x7f020012;
-        public static final int startgame_pressed=0x7f020013;
-        public static final int yellowstar=0x7f020014;
+        public static final int home=0x7f02000a;
+        public static final int home_button=0x7f02000b;
+        public static final int home_highlighted=0x7f02000c;
+        public static final int home_pressed=0x7f02000d;
+        public static final int icon=0x7f02000e;
+        public static final int options=0x7f02000f;
+        public static final int options_button=0x7f020010;
+        public static final int options_highlighted=0x7f020011;
+        public static final int options_pressed=0x7f020012;
+        public static final int redstar=0x7f020013;
+        public static final int retry=0x7f020014;
+        public static final int retry_button=0x7f020015;
+        public static final int retry_highlighted=0x7f020016;
+        public static final int retry_pressed=0x7f020017;
+        public static final int startgame=0x7f020018;
+        public static final int startgame_button=0x7f020019;
+        public static final int startgame_highlighted=0x7f02001a;
+        public static final int startgame_pressed=0x7f02001b;
+        public static final int yellowstar=0x7f02001c;
     }
     public static final class id {
         public static final int Credits=0x7f070010;
@@ -105,10 +113,12 @@ containing a value of this type.
         public static final int fill=0x7f070004;
         public static final int helpText=0x7f070005;
         public static final int highText=0x7f070006;
-        public static final int score=0x7f070015;
+        public static final int home=0x7f070016;
+        public static final int retry=0x7f070015;
+        public static final int score=0x7f070017;
         public static final int scoreText=0x7f070014;
         public static final int snake=0x7f070003;
-        public static final int text=0x7f070016;
+        public static final int text=0x7f070018;
         public static final int widget28=0x7f070007;
         public static final int widget34=0x7f07000b;
         public static final int widget35=0x7f07000d;
@@ -126,26 +136,35 @@ containing a value of this type.
         public static final int settings=0x7f030005;
     }
     public static final class string {
+        public static final int Displayfps=0x7f060010;
         /**  ABOUT 
          */
-        public static final int about=0x7f060011;
+        public static final int about=0x7f060014;
         public static final int app_name=0x7f060000;
-        public static final int busy=0x7f060013;
+        public static final int busy=0x7f060016;
+        public static final int dfps=0x7f060011;
+        public static final int fps=0x7f06001d;
         /**  HELP 
          */
-        public static final int help=0x7f060012;
+        public static final int help=0x7f060015;
         public static final int highscore=0x7f060008;
         public static final int highscoresNo=0x7f060009;
-        public static final int low_score=0x7f060017;
+        public static final int localHigh=0x7f060019;
+        public static final int low_score=0x7f06001b;
         public static final int name=0x7f06000c;
         public static final int nameExpl=0x7f06000d;
-        public static final int no_internet=0x7f060014;
-        public static final int score_done=0x7f060015;
-        public static final int score_saved=0x7f060016;
+        /**  Top 
+         */
+        public static final int new_highscore=0x7f06001c;
+        public static final int noDisplayfps=0x7f06000f;
+        public static final int no_internet=0x7f060017;
+        public static final int score=0x7f06001e;
+        public static final int score_done=0x7f060018;
+        public static final int score_saved=0x7f06001a;
         public static final int sendHigh=0x7f06000b;
         public static final int sendNoHigh=0x7f06000a;
-        public static final int sendNoTwitter=0x7f06000f;
-        public static final int sendTwitter=0x7f060010;
+        public static final int sendNoTwitter=0x7f060012;
+        public static final int sendTwitter=0x7f060013;
         public static final int sendingHigh=0x7f06000e;
         public static final int sensor=0x7f060005;
         /**  SETTINGS 

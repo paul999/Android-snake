@@ -635,11 +635,21 @@ public class SnakeView extends SurfaceView implements SurfaceHolder.Callback {
 			paint.setStyle(Paint.Style.FILL);
 			paint.setColor(Color.argb(255, 0, 0, 255));
 
-			canvas.drawText("FPS: " + rfps, 80, 60, paint);
+			if (getSettings().getBoolean("fps", true))
+			{
+				canvas.drawText(getResources().getString(R.string.fps) + ": " + rfps, 80, 60, paint);
+			}
+			
+			String tmp = "";
+			
+			if (score > settings.getInt("highscore", 0))
+			{
+				tmp += getResources().getString(R.string.new_highscore);
+			}
 			
 			paint.setStyle(Paint.Style.FILL);
 			paint.setColor(Color.argb(255, 0, 0, 255));			
-			canvas.drawText("Score: " + score, 0, 10, paint);
+			canvas.drawText(getResources().getString(R.string.score) + ": " + score + tmp, 0, 10, paint);
 
 			for (int x = 0; x < mXTileCount; x += 1) {
 				for (int y = 0; y < mYTileCount; y += 1) {

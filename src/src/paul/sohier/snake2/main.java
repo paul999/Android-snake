@@ -5,10 +5,7 @@ import paul.sohier.snake2.view.homeView;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.preference.PreferenceManager;
-import android.util.Log;
 import android.view.Display;
 import android.view.View;
 import android.view.Window;
@@ -19,13 +16,10 @@ import android.widget.Button;
 public class main extends Activity {
 	private homeView mhomeView;
 	
-	private Context c;
-
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		// No Title bar
-		c = this;
 		requestWindowFeature(Window.FEATURE_NO_TITLE);
 
 		setContentView(R.layout.main);
