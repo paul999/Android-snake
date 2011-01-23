@@ -24,7 +24,7 @@ import android.widget.TextView;
 public class ScoreActivity extends Activity {
 	private static ProgressDialog dialog;
 	private SharedPreferences settings;
-	
+
 	StringBuilder sb;
 
 	protected void onCreate(Bundle savedInstanceState) {
@@ -34,7 +34,7 @@ public class ScoreActivity extends Activity {
 		requestWindowFeature(Window.FEATURE_NO_TITLE);
 
 		setContentView(R.layout.score);
-		
+
 		settings = PreferenceManager.getDefaultSharedPreferences(this);
 
 		int mScore = (int) settings.getLong("tmpscore", 0);
@@ -44,9 +44,8 @@ public class ScoreActivity extends Activity {
 		Formatter formatter = new Formatter(sb, Locale.getDefault());
 
 		formatter.format(getString(R.string.score_done), mScore);
-		
-		if (mScore < 5)
-		{
+
+		if (mScore < 5) {
 			sb.append(getString(R.string.low_score));
 		}
 
@@ -64,16 +63,15 @@ public class ScoreActivity extends Activity {
 		TextView tv = (TextView) findViewById(R.id.scoreText);
 
 		tv.setWidth(width - 75);
-		
-		if (settings.getLong("tmpscore", 0) > settings.getInt("highscore", 0))
-		{
+
+		if (settings.getLong("tmpscore", 0) > settings.getInt("highscore", 0)) {
 			formatter.format(getString(R.string.localHigh));
-			
+
 			SharedPreferences.Editor editor = settings.edit();
-			editor.putInt("highscore", (int)settings.getLong("tmpscore", 0));
+			editor.putInt("highscore", (int) settings.getLong("tmpscore", 0));
 			editor.commit();
-			
-		}		
+
+		}
 
 		if (settings.getBoolean("savescore", false)) {
 			Log.d("DEBUG", "SCORE SAVE!");
@@ -109,7 +107,7 @@ public class ScoreActivity extends Activity {
 
 					Beheer.makeHttpRequest(mScore);
 					dialog.dismiss();
-					
+
 					sb.append(getString(R.string.score_saved));
 				}
 			}).start();
@@ -120,17 +118,18 @@ public class ScoreActivity extends Activity {
 			editor.commit();
 			editor = null;
 		}
-		
+
 		TextView t = (TextView) findViewById(R.id.scoreText);
 		t.setText(sb);
-		
+
 		Button RetryButton = (Button) findViewById(R.id.retry);
 
 		RetryButton.setOnClickListener(new OnClickListener() {
 
 			public void onClick(View v) {
 				finish();
-				Intent StartGameIntent = new Intent(ScoreActivity.this,PlayActivity.class);
+				Intent StartGameIntent = new Intent(ScoreActivity.this,
+						PlayActivity.class);
 				startActivity(StartGameIntent);
 			}
 		});
@@ -141,6 +140,6 @@ public class ScoreActivity extends Activity {
 			public void onClick(View v) {
 				finish();
 			}
-		});		
+		});
 	}
 }

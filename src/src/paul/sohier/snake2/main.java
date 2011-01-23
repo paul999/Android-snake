@@ -28,12 +28,7 @@ public class main extends Activity {
 		Beheer.setAd();
 		Beheer.setContext(this);
 
-		Display display = ((WindowManager) getSystemService(Context.WINDOW_SERVICE))
-				.getDefaultDisplay();
-		int width = display.getWidth() - 75;
-
 		Button StartGameButton = (Button) findViewById(R.id.StartGame);
-		StartGameButton.setWidth(width);
 		StartGameButton.setOnClickListener(new OnClickListener() {
 
 			public void onClick(View v) {
@@ -44,7 +39,6 @@ public class main extends Activity {
 		});
 
 		Button HelpButton = (Button) findViewById(R.id.Help);
-		HelpButton.setWidth(width);
 		HelpButton.setOnClickListener(new OnClickListener() {
 
 			public void onClick(View v) {
@@ -54,7 +48,6 @@ public class main extends Activity {
 		});
 
 		Button OptionsButton = (Button) findViewById(R.id.Options);
-		OptionsButton.setWidth(width);
 		OptionsButton.setOnClickListener(new OnClickListener() {
 
 			public void onClick(View v) {
@@ -65,7 +58,6 @@ public class main extends Activity {
 		});
 
 		Button AboutButton = (Button) findViewById(R.id.Credits);
-		AboutButton.setWidth(width);
 		AboutButton.setOnClickListener(new OnClickListener() {
 
 			public void onClick(View v) {
@@ -75,7 +67,6 @@ public class main extends Activity {
 		});
 
 		Button HighscoreButton = (Button) findViewById(R.id.Highscore);
-		HighscoreButton.setWidth(width);
 		HighscoreButton.setOnClickListener(new OnClickListener() {
 
 			public void onClick(View v) {
@@ -86,7 +77,6 @@ public class main extends Activity {
 		});
 
 		Button ExitButton = (Button) findViewById(R.id.Exit);
-		ExitButton.setWidth(width);
 		ExitButton.setOnClickListener(new OnClickListener() {
 
 			public void onClick(View v) {
