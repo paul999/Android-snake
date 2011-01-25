@@ -19,6 +19,9 @@ public class main extends Activity {
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
+		
+		Beheer.setDebugAdd();
+		
 		// No Title bar
 		requestWindowFeature(Window.FEATURE_NO_TITLE);
 

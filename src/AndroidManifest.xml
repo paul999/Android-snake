@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-	package="paul.sohier.snake2" android:installLocation="preferExternal" android:versionCode="201" android:versionName="2.0.1">
-	<application android:label="Snake2" android:icon="@drawable/icon"  installLocation="preferExternal">
+	package="paul.sohier.snake2" android:installLocation="preferExternal"
+	android:versionCode="201" android:versionName="2.0.1">
+	<application android:label="Snake2" android:icon="@drawable/icon"
+		installLocation="preferExternal">
 		<activity android:name="main" android:screenOrientation="portrait"
 			android:configChanges="keyboardHidden|orientation">
 
@@ -26,11 +28,23 @@
 		</activity>
 		<activity android:name="HelpActivity"
 			android:screenOrientation="portrait">
-		</activity>		
+		</activity>
 		<activity android:name="ScoreActivity"
 			android:screenOrientation="portrait">
 		</activity>
 		<meta-data android:value="a14d20f7d94126b" android:name="ADMOB_PUBLISHER_ID" />
+
+		<!-- AdMobActivity definition -->
+		<activity android:name="com.admob.android.ads.AdMobActivity"
+			android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+			android:configChanges="orientation|keyboard|keyboardHidden" />
+		<!-- Track Market installs -->
+		<receiver android:name="com.admob.android.ads.analytics.InstallReceiver"
+			android:exported="true">
+			<intent-filter>
+				<action android:name="com.android.vending.INSTALL_REFERRER" />
+			</intent-filter>
+		</receiver>
 
 	</application>
 

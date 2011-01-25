@@ -38,7 +38,8 @@
 	</string>
 
 	<!-- HELP -->
-	<string name="help">\n\n\n\nHelp
+	<string name="help">\n\n\n\nGame instructions\nThe goal of the game is to get a as high as possible score with "eating" apples that are in the playing field. This orange apples are random placed on the playfield. 
+	You should not eat your own tale, or go to the green border. Touching the border or eating your tale will end the game. 
 	</string>
 	
 	<string name="busy">Sending...</string>

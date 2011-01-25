@@ -33,11 +33,11 @@ public class Beheer {
 	static public void setAct(Activity a) {
 		act = a;
 	}
-
-	static public void setAd() {
-		AdView ad = (AdView) act.findViewById(R.id.adver);
-		ad.bringToFront();
+	
+	static public void setDebugAdd()
+	{
 		if (getDebug()) {
+			Log.d("ADMANAGER", "Allow ADD");
 			AdManager.setTestDevices(new String[] { AdManager.TEST_EMULATOR, // Android
 																				// emulator
 					//"0BD8378A2247D33B57762EB03AF750D7", // My T-Mobile G1 Test
@@ -45,6 +45,11 @@ public class Beheer {
 			});
 		}
 		AdManager.setAllowUseOfLocation(true);
+	}
+
+	static public void setAd() {
+		AdView ad = (AdView) act.findViewById(R.id.adver);
+		ad.bringToFront();
 	}
 
 	public static void showAlertDialog(int messageId, String string) {

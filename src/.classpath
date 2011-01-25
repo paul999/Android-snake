@@ -3,6 +3,6 @@
 	<classpathentry kind="con" path="com.android.ide.eclipse.adt.ANDROID_FRAMEWORK"/>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="src" path="gen"/>
-	<classpathentry kind="lib" path="/home/paul/laptop_oud/snake/Android-snake/src/libs/admob-sdk-android.jar"/>
+	<classpathentry kind="lib" path="/home/paul/android/Android-snake/jar/admob-sdk-android.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

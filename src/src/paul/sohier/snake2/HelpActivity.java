@@ -14,6 +14,8 @@ public class HelpActivity extends Activity {
 
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
+		
+		Beheer.setDebugAdd();
 
 		// No Title bar
 		requestWindowFeature(Window.FEATURE_NO_TITLE);
@@ -22,6 +24,7 @@ public class HelpActivity extends Activity {
 
 		Beheer.setAct(this);
 		Beheer.setAd();
+		Beheer.setContext(this);
 
 		homeView mhomeView = (homeView) findViewById(R.id.snake);
 
