@@ -146,6 +146,8 @@ containing a value of this type.
          */
         public static final int about=0x7f060014;
         public static final int app_name=0x7f060000;
+        /**  Don't remove last \n\n\n! 
+         */
         public static final int busy=0x7f060016;
         public static final int dfps=0x7f060011;
         public static final int fps=0x7f06001d;

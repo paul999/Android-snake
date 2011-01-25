@@ -38,9 +38,21 @@
 	</string>
 
 	<!-- HELP -->
-	<string name="help">\n\n\n\nGame instructions\nThe goal of the game is to get a as high as possible score with "eating" apples that are in the playing field. This orange apples are random placed on the playfield. 
-	You should not eat your own tale, or go to the green border. Touching the border or eating your tale will end the game. 
-	</string>
+	<string name="help">\n\n\n\nGame instructions\n\nThe goal of the game is to get a as high as possible score with "eating" apples that are in the playing field. This orange apples are random placed on the playfield. 
+	You should not eat your own tale, or go to the green border. Touching the border or eating your tale will end the game.
+	
+	\n\n
+	Controlling the snake
+	\n\n
+	The snake can be controlled with both the dpad(trackball) or via the touchscreen. The default controls are via the dpad. You can change this in the settings page \n\n
+	When using the touchscreen, there will be small lines drawed where you can touch to move the snake.
+	
+	By touching the screen at the bottom, or moving your trackball down the snake will go down. \nBy touching at the top, or moving the trackball up, the snake will go up.\n
+	By touching the screen at the left, or moving your trackball to the left, the snake will go left. \nBy touching at the right, or moving the trackball to the right, the snake will go right.\n\n
+	The snake will not move in the direction he came from.
+	
+	\n\n\n 
+	</string><!-- Don't remove last \n\n\n! -->
 	
 	<string name="busy">Sending...</string>
 	<string name="no_internet">No internet</string>
